@@ -4,6 +4,7 @@ import React from "react";
 import { GithubIcon, LinkedInIcon, WhatsAppIcon } from "../subComponents/Icons";
 import Logo from "../subComponents/Logo";
 import { motion } from "framer-motion";
+import SoundBar from "@/subComponents/SoundBar";
 
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -29,6 +30,7 @@ const NavBar = () => {
         <CustomLink href="/contact" title="CONTACT" className="ml-4" />
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
+        <SoundBar/>
         <motion.a
           href="https://github.com/YasaminAfshar"
           target={"_blank"}
