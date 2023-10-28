@@ -19,7 +19,7 @@ const Line = ({ click }) => {
 
   return (
     <motion.div
-      className="bg-black border h-8 w-3 mx-1"
+      className="bg-black h-8 w-2 mx-1"
       animate={controls}
     ></motion.div>
   );

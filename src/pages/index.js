@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content="I have created this beautiful portfolio so that you can access all the work and projects carried out in what I like most, which is programming"/>
       </Head>
       <main className='flex items-center text-dark w-full min-h-screen'>
-        <Layout>
+        <Layout className='pt-0'>
           <div className='flex items-center justify-between w-full'>
             <div>
               imagen aplicada con ThreeJs
