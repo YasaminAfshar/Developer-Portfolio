@@ -1,14 +1,19 @@
 import { useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-const Line = ({ click }) => {
+const Line = ({ click, animationDelay }) => {
   const controls = useAnimation();
 
   const playAnimation = async () => {
     if (click) {
       await controls.start({
-        scaleY: [1,1.5,1],
-        transition: { duration: 1.5, repeat: Infinity },
+        scaleY: [1, 2, 1],
+        transition: {
+          duration: 2,
+          repeat: Infinity,
+          delay: animationDelay,
+          timingFunction: "ease",
+        },
       });
     } else {
       controls.stop();
@@ -19,7 +24,7 @@ const Line = ({ click }) => {
 
   return (
     <motion.div
-      className="bg-black h-8 w-2 mx-1"
+      className="bg-black h-8 w-1.5 mx-1"
       animate={controls}
     ></motion.div>
   );
@@ -40,15 +45,12 @@ const SoundBar = () => {
   };
 
   return (
-    <div
-      className="flex z-10 mx-8 cursor-pointer" 
-      onClick={handleClick}
-    >
-      <Line click={click} />
-      <Line click={click} />
-      <Line click={click} />
-      <Line click={click} />
-      <Line click={click} />
+    <div className="flex z-10 mx-8 cursor-pointer" onClick={handleClick}>
+      <Line click={click} animationDelay={0.1} />
+      <Line click={click} animationDelay={0.3} />
+      <Line click={click} animationDelay={0.5} />
+      <Line click={click} animationDelay={0.7} />
+      <Line click={click} animationDelay={0.9} />
 
       <audio
         src="https://res.cloudinary.com/dsrdpgpzy/video/upload/v1698444435/Portfolio/svgs/music1_tahxdt.mp3"
