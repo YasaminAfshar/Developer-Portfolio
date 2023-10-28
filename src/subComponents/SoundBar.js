@@ -7,7 +7,7 @@ const Line = ({ click }) => {
   const playAnimation = async () => {
     if (click) {
       await controls.start({
-        scaleY: [1,2,1],
+        scaleY: [1,1.5,1],
         transition: { duration: 1.5, repeat: Infinity },
       });
     } else {
