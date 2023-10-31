@@ -16,15 +16,15 @@ export default function Home() {
       </Head>
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
-          <div className="flex items-center justify-between w-full mx-auto">
-            <div className="w-9/12 h-screen ">
+          <div className="flex justify-between w-full h-screen mx-auto">
+            <div className='w-9/12'>
               <ComputersCanvas />
             </div>
             <div className='w-1/2'>
               <p>Welcome to my portfolio</p>
               <h1>Hi, I'm Yasmin Afsharinejad</h1>
               <h3>
-                Full Stack Developer/ Virtual Assitant Data Entry/ Digital
+                Full Stack Developer/ Virtual Assistant Data Entry/ Digital
                 Marketing
               </h3>
               <p>
