@@ -17,7 +17,7 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
           <div className="flex justify-between w-full h-screen mx-auto">
-            <div className='w-9/12'>
+            <div className='w-1/2'>
               <ComputersCanvas />
             </div>
             <div className='w-1/2'>
