@@ -11,7 +11,7 @@ const Computers = ({ isMobile }) => {
       <hemisphereLight intensity={0.7} groundColor="black" />
       <primitive
         object={scene}
-        scale={isMobile ? 0.7 : 1.98}
+        scale={isMobile ? 0.7 : 2}
         position={isMobile ? [0, -3, -2.2] : [-0.02, -0.01, 0]}
         rotation={[0, 0, 0.02]}
       />

@@ -14,17 +14,17 @@ export default function Home() {
           content="I have created this beautiful portfolio so that you can access all the work and projects carried out in what I like most, which is programming"
         />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen">
-        <Layout className="pt-0">
-          <div className="flex justify-between w-full h-screen mx-auto">
-            <div className='w-1/2'>
+      <main className="flex text-dark w-full min-h-screen">
+        <Layout className="pt-10">
+          <div className="flex w-full h-full">
+            <div className="w-1/2 h-auto">
               <ComputersCanvas />
             </div>
-            <div className='w-1/2'>
-              <p>Welcome to my portfolio</p>
+            <div className="w-1/2 flex flex-col items-center pt-14 pl-20">
+              <p>Welcome to my portfolio!</p>
               <h1>Hi, I'm Yasmin Afsharinejad</h1>
               <h3>
-                Full Stack Developer/ Virtual Assistant Data Entry/ Digital
+                Full Stack Developer with knowledge of Data Entry and Digital
                 Marketing
               </h3>
               <p>
