@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         mont: ["var(--font-mont)", ...fontFamily.sans],
+        special: ["var(--font-special)", ...fontFamily.sans],
       },
       colors: {
         dark: "#1b1b1b",
