@@ -2,9 +2,9 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Special_Elite, Space_Mono, Unna } from "next/font/google";
-import {useState, useEffect} from "react";
+import { Special_Elite, Unna } from "next/font/google";
 import portfileImg from "../../public/images/svgs/header-img.svg";
+import TypewriterText from "@/subComponents/TypewriterEffect";
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
@@ -14,11 +14,11 @@ const special = Special_Elite({
   variable: "--font-special",
 });
 
-const space = Space_Mono({
+/* const space = Space_Mono({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-space",
-});
+}); */
 
 const unna = Unna({
   weight: "400",
@@ -27,18 +27,7 @@ const unna = Unna({
 });
 
 export default function Home() {
-
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 3000;
-
-  useEffect(() => {
-    let ticker = setInterval(() =>{
-
-    })
-  })
+//   const text = "Full Stack Developer/Data Entry/Digital Marketing";
 
   return (
     <>
@@ -72,17 +61,9 @@ export default function Home() {
               >
                 I'm Yasmin Afsharinejad
               </h1>
-              <h3
-                className={`${space.variable} font-space text-dark text-2xl text-center font-extrabold pt-2 my-2 mx-auto cursor-default overflow-hidden`}
-              >
-                {`Full Stack Developer`}
-                <span className="">
-                  {" "}
-                  with knowledge of Data Entry and Digital Marketing
-                </span>
-              </h3>
+              <TypewriterText/>
               <p
-                className={`${unna.variable} font-unna text-dark text-center text-2xl font-medium py-2 mx-auto my-3 cursor-default overflow-hidden`}
+                className={`${unna.variable} font-unna text-dark text-center text-2xl font-medium py-2 mx-auto my-3 cursor-default overflow-hidden relative`}
               >
                 I offer a strong guarantee of reliable and high-quality
                 services, ensuring that your projects are executed with
