@@ -30,7 +30,7 @@ const NavBar = () => {
         <CustomLink href="/contact" title="CONTACT" className="ml-4" />
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
-        <SoundBar/>
+        <SoundBar />
         <motion.a
           href="https://github.com/YasaminAfshar"
           target={"_blank"}
@@ -50,7 +50,7 @@ const NavBar = () => {
           <LinkedInIcon />
         </motion.a>
         <motion.a
-          href="https://wa.link/l5hje1"
+          href="https://wa.link/7apkc8"
           target={"_blank"}
           className="w-14 ml-4"
           whileHover={{ y: -8 }}

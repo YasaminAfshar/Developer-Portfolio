@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import Typewriter from "typewriter-effect";
 import { Space_Mono } from "next/font/google";
 
 const space = Space_Mono({
@@ -8,41 +9,27 @@ const space = Space_Mono({
 });
 
 const TypewriterText = () => {
-  const [text, setText] = useState("");
-  const [isTyping, setIsTyping] = useState(true);
-
-  useEffect(() => {
-    const fullText = "Full Stack Developer/Data Entry/Digital Marketing";
-
-    let currentText = "";
-    let currentIndex = 0;
-
-    const typeText = () => {
-      if (currentIndex < fullText.length) {
-        currentText += fullText[currentIndex];
-        setText(currentText);
-        currentIndex++;
-        setTimeout(typeText, 150);
-      } else {
-        setIsTyping(false);
-        setTimeout(() => {
-          currentIndex = 0; 
-          currentText = "";
-          setIsTyping(true); 
-          typeText();
-        }, 1500); 
-      }
-    };
-
-    typeText();
-  }, []);
-
   return (
     <h3
-      className={`${space.variable} font-space text-dark text-2xl text-center font-extrabold pt-2 my-2 mx-auto cursor-default overflow-hidden `}
+      className={`${space.variable} font-space text-black text-2xl text-center font-extrabold pt-2 my-2 mx-auto cursor-default overflow-hidden `}
     >
-      {text}
-      <span className="span">&#160;</span>
+      <Typewriter
+        options={{
+          autoStart: true,
+          loop: true,
+          delay: 200,
+        }}
+        onInit={(typewriter) => {
+          typewriter
+
+            .typeString("Full Stack Developer/Data Entry/Digital Marketing")
+
+            .pauseFor(2000)
+            .deleteAll()
+            .changeDeleteSpeed(2500)
+            .start();
+        }}
+      />
     </h3>
   );
 };

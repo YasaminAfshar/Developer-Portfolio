@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import Head from "next/head";
 import { Montserrat } from "next/font/google";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
@@ -25,6 +26,7 @@ export default function App({ Component, pageProps }) {
       >
         <NavBar />
         <Component {...pageProps} />
+        <Footer/>
       </main>
     </>
   );
