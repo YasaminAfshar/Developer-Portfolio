@@ -2,6 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import { Space_Mono } from "next/font/google";
 
+
 const space = Space_Mono({
   weight: "400",
   subsets: ["latin"],
@@ -11,7 +12,7 @@ const space = Space_Mono({
 const TypewriterText = () => {
   return (
     <h3
-      className={`${space.variable} font-space text-black text-2xl text-center font-extrabold pt-2 my-2 mx-auto cursor-default overflow-hidden `}
+      className={`${space.variable} font-space text-black text-3xl text-center font-extrabold pt-2 my-2 mx-auto cursor-default overflow-hidden textShadow`}
     >
       <Typewriter
         options={{
@@ -22,11 +23,19 @@ const TypewriterText = () => {
         onInit={(typewriter) => {
           typewriter
 
-            .typeString("Full Stack Developer/Data Entry/Digital Marketing")
-
+            .typeString("Full Stack Developer")
             .pauseFor(2000)
             .deleteAll()
-            .changeDeleteSpeed(2500)
+            .typeString("Virtual Assistant")
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString("Data Entry")
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString("Digital Marketing")
+            .pauseFor(2000)
+            .deleteAll()
+            .changeDeleteSpeed(3000)
             .start();
         }}
       />

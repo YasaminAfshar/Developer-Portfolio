@@ -9,6 +9,7 @@ import TypewriterText from "@/subComponents/TypewriterEffect";
 import { LinkArrow } from "@/subComponents/Icons";
 import { Special_Elite, Unna, Inconsolata } from "next/font/google";
 import portfileImg from "../../public/images/svgs/header-img.svg";
+import Cube from "@/subComponents/Cube";
 
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
@@ -60,7 +61,7 @@ export default function Home() {
                 Welcome to my portfolio!
               </motion.p>
               <h1
-                className={`${special.variable} font-special w-auto text-black text-6xl text-center font-bold pt-2 my-2 mx-auto cursor-default overflow-hidden`}
+                className={`${special.variable} font-special w-auto text-black text-6xl text-center font-bold pt-2 my-2 px-2 mx-auto cursor-default overflow-hidden titleShadow`}
               >
                 I'm Yasmin Afsharinejad
               </h1>
@@ -73,7 +74,7 @@ export default function Home() {
                 precision, attention to detail, and a commitment to excellence.
                 Your success is my priority.
               </p>
-              <div className="flex self-start items-center mt-4">
+              <div className="flex self-start items-center mt-4 mx-16">
                 <Link
                   href="/curriculum.pdf"
                   target={"_blank"}
@@ -88,10 +89,8 @@ export default function Home() {
         </Layout>
 
         <HireMe />
+        <Cube />
 
-        <div className="absolute inline-block right-8 bottom-8 w-1/4">
-          
-        </div>
       </main>
     </>
   );
