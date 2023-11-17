@@ -81,7 +81,7 @@ export default function Home() {
                   className={`${inconsolata.variable} font-inconsolata flex items-center bg-dark text-white tracking-wider py-3 px-6 rounded-lg text-2xl font-semibold hover:bg-light hover:text-black border-4 border-solid border-transparent hover:border-dark`}
                   download={true}
                 >
-                  Download Resume <LinkArrow className={"w-8 ml-2"} />
+                  Download Resume <LinkArrow className={"w-[40px] ml-2"} />
                 </Link>
               </div>
             </div>
