@@ -65,9 +65,7 @@ const About = () => {
               >
                 What services do I provide?
               </h3>
-              <div>
-                <ServiceCard />
-              </div>
+              <ServiceCard />
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
               <div className="absolute top-1 -right-4 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark" />

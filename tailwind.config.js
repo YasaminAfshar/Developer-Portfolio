@@ -14,6 +14,7 @@ module.exports = {
         inconsolata: ["var(--font-inconsolata)", ...fontFamily.sans],
         abel: ["var(--font-abel)", ...fontFamily.sans],
         rowdies: ["var(--font-rowdies)", ...fontFamily.sans],
+        merienda: ["var(--font-merienda)", ...fontFamily.sans],
       },
       colors: {
         dark: "#1b1b1b",
