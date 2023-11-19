@@ -7,7 +7,6 @@ import Image from 'next/image';
 import profileImage from "../../public/images/profile/perfil1.png";
 import ServiceCard from '@/subComponents/ServiceCard';
 
-
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
 const rowdies = Rowdies({
@@ -39,6 +38,7 @@ const About = () => {
           content="Right now, you are on the ABOUT PAGE where you will find a description of my knowledge and experiences in the field of programming, digital marketing and data entry."
         />
       </Head>
+
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16 pb-20">
           <h1
@@ -46,26 +46,36 @@ const About = () => {
           >
             Passion Fuels Purpose!
           </h1>
-          <div className="grid w-full grid-cols-8 gap-16 mt-20">
-            <div className="col-span-3 flex flex-col items-start justify-start">
+          <div className="w-full grid grid-cols-8 gap-16 mt-20">
+            <div className="col-span-4 flex flex-col items-center justify-start mt-10">
+              <h3
+                className={`${space.variable} font-space font-extrabold text-black text-3xl text-center p-5 underline underline-offset-4 mx-auto animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+              >
+                What About Me?
+              </h3>
               <p
-                className={`${unna.variable} font-unna text-2xl text-black font-medium text-justify indent-12 my-10 mx-auto `}
+                className={`${unna.variable} font-unna text-2xl text-black font-medium text-justify indent-12 leading-relaxed mt-5 mx-10 `}
               >
                 As a full stack developer with experience in digital marketing
                 and data management, I constantly seek to improve my skills
-                through practice and constant updating. My main goal is to
-                provide exceptional customer service, exceeding their
-                expectations in a world where technology predominates. My
-                interest in programming and digital arose from observing its
-                growth and the increasing demand for professionals in this
-                constantly evolving field.
+                through practice and constant updating.
               </p>
-              <h3
-                className={`${space.variable} font-space font-extrabold text-black text-3xl text-center my-5 underline underline-offset-4 decoration-wavy mx-auto animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+              <p
+                className={`${unna.variable} font-unna text-2xl text-black font-medium text-justify indent-12 leading-relaxed mt-5 mx-10 `}
               >
-                What services do I provide?
-              </h3>
-              <ServiceCard />
+                I believe that design is about more than just making things look
+                pretty- it's about solving problems and creating intuitive,
+                enjoyable experiences for users.
+              </p>
+              <p
+                className={`${unna.variable} font-unna text-2xl text-black font-medium text-justify indent-12 leading-relaxed mt-5 mx-10 `}
+              >
+                My main goal is to provide exceptional customer service,
+                exceeding their expectations in a world where technology
+                predominates. My interest in programming and digital arose from
+                observing its growth and the increasing demand for professionals
+                in this constantly evolving field.
+              </p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
               <div className="absolute top-1 -right-4 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark" />
@@ -75,9 +85,14 @@ const About = () => {
                 className="w-full h-auto rounded-2xl"
               />
             </div>
-            <div>
-              <div></div>
-            </div>
+          </div>
+          <div>
+            <h3
+              className={`${space.variable} font-space font-extrabold text-black text-3xl text-center mt-5 p-5 mx-auto underline underline-offset-4 mx-auto animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+            >
+              What services do I offer?
+            </h3>
+            <ServiceCard />
           </div>
         </Layout>
       </main>
