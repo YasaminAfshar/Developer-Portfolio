@@ -58,7 +58,7 @@ const ServiceCard = () => {
         </CardFooter>
       </Card>
       
-      <Card className="w-48 h-auto flex justify-center items-center serviceCard">
+      {/* <Card className="w-48 h-auto flex justify-center items-center serviceCard">
         <CardHeader floated={false} className="h-auto">
           <Image src={virtual} alt="Services Card" className="w-20 h-20" />
         </CardHeader>
@@ -141,7 +141,7 @@ const ServiceCard = () => {
             className="w-full border"
           />
         </CardFooter>
-      </Card>
+      </Card> */}
     </div>
   );
 }

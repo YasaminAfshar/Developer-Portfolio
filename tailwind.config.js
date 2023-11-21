@@ -17,6 +17,7 @@ module.exports = withMT({
         special: ["var(--font-special)", ...fontFamily.sans],
         space: ["var(--font-space)", ...fontFamily.sans],
         unna: ["var(--font-unna)", ...fontFamily.sans],
+        roboto: ["var(--font-roboto)", ...fontFamily.sans],
         inconsolata: ["var(--font-inconsolata)", ...fontFamily.sans],
         abel: ["var(--font-abel)", ...fontFamily.sans],
         rowdies: ["var(--font-rowdies)", ...fontFamily.sans],
