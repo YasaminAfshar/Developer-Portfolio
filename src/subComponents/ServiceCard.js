@@ -9,10 +9,8 @@ import {
   Progress
 } from "@material-tailwind/react";
 import { Merienda } from "next/font/google";
-import web from "../../public/images/general/web.png"
 import developer from "../../public/images/general/developer.png";
 import data from "../../public/images/general/data.png";
-import creator from "../../public/images/general/creator.png";
 import virtual from "../../public/images/general/assistant.png";
 import marketing from "../../public/images/general/marketing.png";
 
@@ -27,7 +25,7 @@ const merienda = Merienda({
 const ServiceCard = () => {
   
   return (
-    <div className="flex gap-8 mt-10">
+    <div className="flex justify-center gap-14 mt-10">
       
       <Card className="w-48 h-auto flex justify-center items-center serviceCard">
         <CardHeader floated={false} className="h-auto">
@@ -137,7 +135,7 @@ const ServiceCard = () => {
             85% Experience
           </Typography>
           <Progress
-            value={55}
+            value={85}
             size="lg"
             color="deep-purple"
             className="w-full border"
