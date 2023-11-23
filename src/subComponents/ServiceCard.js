@@ -58,7 +58,7 @@ const ServiceCard = () => {
         </CardFooter>
       </Card>
       
-      {/* <Card className="w-48 h-auto flex justify-center items-center serviceCard">
+      <Card className="w-48 h-auto flex justify-center items-center serviceCard">
         <CardHeader floated={false} className="h-auto">
           <Image src={virtual} alt="Services Card" className="w-20 h-20" />
         </CardHeader>
@@ -86,6 +86,7 @@ const ServiceCard = () => {
           />
         </CardFooter>
       </Card>
+
       <Card className="w-48 h-auto flex justify-center items-center serviceCard">
         <CardHeader floated={false} className="h-auto">
           <Image src={data} alt="Services Card" className="w-20 h-20" />
@@ -114,6 +115,7 @@ const ServiceCard = () => {
           />
         </CardFooter>
       </Card>
+
       <Card className="w-48 h-auto flex justify-center items-center serviceCard">
         <CardHeader floated={false} className="h-auto">
           <Image src={marketing} alt="Services Card" className="w-20 h-20" />
@@ -141,20 +143,9 @@ const ServiceCard = () => {
             className="w-full border"
           />
         </CardFooter>
-      </Card> */}
+      </Card> 
     </div>
   );
 }
 
 export default ServiceCard
-
-
-
-{/* <div className=" flex flex-col items-center justify-evenly serviceCard rounded-xl w-[14rem] h-72 p-5 ">
-        <Image src={css} alt="Services Card" className="w-20 h-20" />
-        <h3
-          className={`${merienda.variable} font-merienda font-extrabold text-2xl text-center tracking-wider`}
-        >
-          Front-End Developer
-        </h3>
-      </div> */}
