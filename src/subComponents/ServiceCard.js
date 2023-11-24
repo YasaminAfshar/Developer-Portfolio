@@ -26,17 +26,17 @@ const ServiceCard = () => {
   
   return (
     <div className="flex justify-center gap-14 mt-10">
-      
-      <Card className="w-48 h-auto flex justify-center items-center serviceCard">
+      <Card className="w-56 h-auto flex justify-center items-center shadow-inner serviceCard">
         <CardHeader floated={false} className="h-auto">
           <Image src={developer} alt="Services Card" className="w-20 h-20" />
         </CardHeader>
         <CardBody className="text-center pt-6">
           <Typography
             variant="h3"
-            className={`${merienda.variable} font-merienda text-black font-extrabold text-xl tracking-wider`}
+            className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
           >
-            Full-Stack Developer
+            Full-Stack <br />
+            Developer
           </Typography>
         </CardBody>
         <CardFooter className="w-full pt-0">
@@ -55,17 +55,18 @@ const ServiceCard = () => {
           />
         </CardFooter>
       </Card>
-      
-      <Card className="w-48 h-auto flex justify-center items-center serviceCard">
+
+      <Card className="w-56 h-auto flex justify-center items-center shadow-inner serviceCard">
         <CardHeader floated={false} className="h-auto">
           <Image src={virtual} alt="Services Card" className="w-20 h-20" />
         </CardHeader>
         <CardBody className="text-center pt-6">
           <Typography
             variant="h3"
-            className={`${merienda.variable} font-merienda text-black font-extrabold text-xl tracking-wider`}
+            className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
           >
-            Virtual Assistant
+            Virtual <br />
+            Assistant
           </Typography>
         </CardBody>
         <CardFooter className="w-full pt-0">
@@ -85,16 +86,17 @@ const ServiceCard = () => {
         </CardFooter>
       </Card>
 
-      <Card className="w-48 h-auto flex justify-center items-center serviceCard">
+      <Card className="w-56 h-auto flex justify-center items-center shadow-inner serviceCard">
         <CardHeader floated={false} className="h-auto">
           <Image src={data} alt="Services Card" className="w-20 h-20" />
         </CardHeader>
         <CardBody className="text-center pt-6">
           <Typography
             variant="h3"
-            className={`${merienda.variable} font-merienda text-black font-extrabold text-xl tracking-wider`}
+            className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
           >
-            Data Entry Work
+            Data Entry <br />
+            Work
           </Typography>
         </CardBody>
         <CardFooter className="w-full pt-0">
@@ -114,16 +116,17 @@ const ServiceCard = () => {
         </CardFooter>
       </Card>
 
-      <Card className="w-48 h-auto flex justify-center items-center serviceCard">
+      <Card className="w-56 h-auto flex justify-center items-center shadow-inner serviceCard">
         <CardHeader floated={false} className="h-auto">
           <Image src={marketing} alt="Services Card" className="w-20 h-20" />
         </CardHeader>
         <CardBody className="text-center pt-6">
           <Typography
             variant="h3"
-            className={`${merienda.variable} font-merienda text-black font-extrabold text-xl tracking-wider`}
+            className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
           >
-            Digital Marketing
+            Digital <br />
+            Marketing
           </Typography>
         </CardBody>
         <CardFooter className="w-full pt-0">
@@ -141,7 +144,7 @@ const ServiceCard = () => {
             className="w-full border"
           />
         </CardFooter>
-      </Card> 
+      </Card>
     </div>
   );
 }

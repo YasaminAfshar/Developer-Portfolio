@@ -89,13 +89,13 @@ const About = () => {
                 </div>
                 <div className="w-full h-auto flex justify-center">
                   <Image
-                      src={profileImage}
-                      alt="Profile image of Yasmin Afsharinejad"
-                      className="relative w-[80%] mx-auto h-auto rounded-2xl border-2 border-solid border-dark bg-light p-4 profileImage"
-                    />
+                    src={profileImage}
+                    alt="Profile image of Yasmin Afsharinejad"
+                    className="relative w-[80%] mx-auto h-auto rounded-2xl border-2 border-solid border-dark bg-light p-4 profileImage"
+                  />
                 </div>
               </div>
-              <div className="w-full h-auto mx-auto flex flex-col justify-center">
+              <div className="w-full h-auto mx-auto flex flex-col justify-center pb-14">
                 <h3
                   className={`${space.variable} font-space font-extrabold text-black text-3xl text-center p-5 mx-auto underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
                 >

@@ -17,9 +17,9 @@ const abel = Abel({
 const Footer = () => {
   return (
     <footer
-      className={`${abel.variable} font-abel w-full border-t-4 border-solid border-black font-semibold text-2xl text-black mx-auto cursor-default px-8`}
+      className={`${abel.variable} font-abel w-full border-t-4 border-solid border-black font-semibold text-2xl text-black mx-auto cursor-default `}
     >
-      <Layout className="flex justify-between items-center py-8">
+      <Layout className="flex justify-between items-center py-8 ">
         <span>
           {new Date().getFullYear()} &copy; All Rights Reserved by the Author
         </span>
