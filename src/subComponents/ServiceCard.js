@@ -8,11 +8,16 @@ import {
   Typography,
   Progress
 } from "@material-tailwind/react";
+import { motion } from "framer-motion";
+import Tilt from "react-vanilla-tilt";
 import { Merienda } from "next/font/google";
 import developer from "../../public/images/general/developer.png";
 import data from "../../public/images/general/data.png";
 import virtual from "../../public/images/general/assistant.png";
 import marketing from "../../public/images/general/marketing.png";
+import creator from "../../public/images/general/creator.png"
+
+const MotionCardHeader = motion(CardHeader)
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
@@ -25,18 +30,81 @@ const merienda = Merienda({
 const ServiceCard = () => {
   
   return (
-    <div className="flex justify-center gap-14 mt-10">
+    <div className="grid grid-cols-5 justify-items-center mt-10">
+      <Tilt>
+        <Card className="w-56 h-auto flex justify-center items-center shadow-inner serviceCard">
+          <MotionCardHeader
+            floated={false}
+            className="h-auto my-5"
+            animate={{
+              scale: [1, 1.5, 1.5, 1, 1],
+              rotate: [0, 0, 180, 180, 0],
+              borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+            }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              repeat: Infinity,
+              repeatDelay: 1,
+            }}
+          >
+            <Image src={developer} alt="Services Card" className="w-20 h-20" />
+          </MotionCardHeader>
+          <CardBody className="text-center pt-6">
+            <Typography
+              variant="h3"
+              className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
+            >
+              Full-Stack <br />
+              Developer
+            </Typography>
+          </CardBody>
+          <CardFooter className="w-full pt-0">
+            <Typography
+              color="blue-gray"
+              variant="h6"
+              className="text-center text-black pb-4 text-lg"
+            >
+              70% Experience
+            </Typography>
+            <Progress
+              value={70}
+              size="lg"
+              color="deep-purple"
+              className="w-full border"
+            />
+          </CardFooter>
+        </Card>
+      </Tilt>
+
       <Card className="w-56 h-auto flex justify-center items-center shadow-inner serviceCard">
-        <CardHeader floated={false} className="h-auto">
-          <Image src={developer} alt="Services Card" className="w-20 h-20" />
-        </CardHeader>
+        <MotionCardHeader
+          floated={false}
+          className="h-auto my-5"
+          animate={{
+            scale: [1, 1.5, 1.5, 1, 1],
+            rotate: [0, 0, 180, 180, 0],
+            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeat: Infinity,
+            repeatDelay: 1,
+          }}
+        >
+          <Image src={creator} alt="Services Card" className="w-20 h-20" />
+        </MotionCardHeader>
         <CardBody className="text-center pt-6">
           <Typography
             variant="h3"
             className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
           >
-            Full-Stack <br />
-            Developer
+            Web
+            <br />
+            Creator
           </Typography>
         </CardBody>
         <CardFooter className="w-full pt-0">
@@ -45,10 +113,10 @@ const ServiceCard = () => {
             variant="h6"
             className="text-center text-black pb-4 text-lg"
           >
-            70% Experience
+            75% Experience
           </Typography>
           <Progress
-            value={70}
+            value={75}
             size="lg"
             color="deep-purple"
             className="w-full border"
@@ -57,9 +125,24 @@ const ServiceCard = () => {
       </Card>
 
       <Card className="w-56 h-auto flex justify-center items-center shadow-inner serviceCard">
-        <CardHeader floated={false} className="h-auto">
+        <MotionCardHeader
+          floated={false}
+          className="h-auto my-5"
+          animate={{
+            scale: [1, 1.5, 1.5, 1, 1],
+            rotate: [0, 0, 180, 180, 0],
+            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeat: Infinity,
+            repeatDelay: 1,
+          }}
+        >
           <Image src={virtual} alt="Services Card" className="w-20 h-20" />
-        </CardHeader>
+        </MotionCardHeader>
         <CardBody className="text-center pt-6">
           <Typography
             variant="h3"
@@ -87,9 +170,24 @@ const ServiceCard = () => {
       </Card>
 
       <Card className="w-56 h-auto flex justify-center items-center shadow-inner serviceCard">
-        <CardHeader floated={false} className="h-auto">
+        <MotionCardHeader
+          floated={false}
+          className="h-auto my-5"
+          animate={{
+            scale: [1, 1.5, 1.5, 1, 1],
+            rotate: [0, 0, 180, 180, 0],
+            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeat: Infinity,
+            repeatDelay: 1,
+          }}
+        >
           <Image src={data} alt="Services Card" className="w-20 h-20" />
-        </CardHeader>
+        </MotionCardHeader>
         <CardBody className="text-center pt-6">
           <Typography
             variant="h3"
@@ -117,9 +215,24 @@ const ServiceCard = () => {
       </Card>
 
       <Card className="w-56 h-auto flex justify-center items-center shadow-inner serviceCard">
-        <CardHeader floated={false} className="h-auto">
+        <MotionCardHeader
+          floated={false}
+          className="h-auto my-5"
+          animate={{
+            scale: [1, 1.5, 1.5, 1, 1],
+            rotate: [0, 0, 180, 180, 0],
+            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeat: Infinity,
+            repeatDelay: 1,
+          }}
+        >
           <Image src={marketing} alt="Services Card" className="w-20 h-20" />
-        </CardHeader>
+        </MotionCardHeader>
         <CardBody className="text-center pt-6">
           <Typography
             variant="h3"
