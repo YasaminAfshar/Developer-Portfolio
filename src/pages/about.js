@@ -168,7 +168,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <Skills/>
+          <Skills />
         </Layout>
       </main>
     </>

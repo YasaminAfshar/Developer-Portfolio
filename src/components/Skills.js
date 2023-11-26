@@ -1,6 +1,8 @@
 import React from 'react'
 import "animate.css";
-import { Space_Mono} from "next/font/google";
+import { Space_Mono, Saira_Condensed} from "next/font/google";
+import Technologies from "@/subComponents/Technologies";
+import BallCanvas from '@/subComponents/Ball';
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
@@ -10,14 +12,38 @@ const space = Space_Mono({
   variable: "--font-space",
 });
 
+
+const saira = Saira_Condensed({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-saira",
+});
+
 const Skills = () => {
   return (
     <>
-      <h2
-        className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto my-10 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
-      >
-        SKILLS
-      </h2>
+      <div className='w-full h-auto mb-20'>
+        <h2
+          className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto my-10 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+        >
+          SKILLS
+        </h2>
+        <div className="flex flex-row flex-wrap justify-center gap-16 h-full w-full">
+          {Technologies.map((technology) => (
+            <div
+              className="w-[7.5rem] h-[7.5rem] text-center"
+              key={technology.name}
+            >
+              <BallCanvas icon={technology.icon} />
+              <p
+                className={`${saira.variable} font-saira text-black font-extrabold text-lg`}
+              >
+                {technology.name}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 }

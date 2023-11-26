@@ -23,6 +23,7 @@ module.exports = withMT({
         rowdies: ["var(--font-rowdies)", ...fontFamily.sans],
         merienda: ["var(--font-merienda)", ...fontFamily.sans],
         cinzel: ["var(--font-cinzel)", ...fontFamily.sans],
+        saira: ["var(--font-saira)", ...fontFamily.sans],
       },
       colors: {
         dark: "#1b1b1b",

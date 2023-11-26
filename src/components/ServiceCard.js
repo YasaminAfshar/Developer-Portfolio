@@ -30,7 +30,7 @@ const merienda = Merienda({
 const ServiceCard = () => {
   
   return (
-    <div className="grid grid-cols-5 justify-items-center justify-center mt-10">
+    <div className="flex justify-center flex-wrap gap-6 mt-10">
       <Tilt className="tilt">
         <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
           <MotionCardHeader
