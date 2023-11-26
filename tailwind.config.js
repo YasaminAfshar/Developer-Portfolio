@@ -22,11 +22,12 @@ module.exports = withMT({
         abel: ["var(--font-abel)", ...fontFamily.sans],
         rowdies: ["var(--font-rowdies)", ...fontFamily.sans],
         merienda: ["var(--font-merienda)", ...fontFamily.sans],
+        cinzel: ["var(--font-cinzel)", ...fontFamily.sans],
       },
       colors: {
         dark: "#1b1b1b",
         light: "#EFEEEE",
-        primary: "#B63E96", 
+        primary: "#B63E96",
         primaryDark: "#58E6D9",
       },
       animation: {

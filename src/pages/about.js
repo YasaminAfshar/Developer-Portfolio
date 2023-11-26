@@ -1,12 +1,37 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import "animate.css";
-import { Rowdies, Roboto, Space_Mono } from "next/font/google";
+import { Rowdies, Roboto, Space_Mono, Cinzel } from "next/font/google";
 import Layout from "@/components/Layout";
-import ServiceCard from "@/subComponents/ServiceCard";
+import ServiceCard from "@/components/ServiceCard";
 import profileImage from "../../public/images/profile/perfil3.png";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Skills from "@/components/Skills";
 
+
+const AnimatedNumbers = ({value}) => {
+  const ref = useRef(null);
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, {duration: 4000})
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if(isInView) {
+      motionValue.set(value);
+    }
+  }, [isInView, value, motionValue])
+
+  useEffect(() => {
+    springValue.on("change", (latest) => {
+      if (ref.current && latest.toFixed(0) <= value){
+        ref.current.textContent = latest.toFixed(0);
+      }
+    })
+  }, [springValue, value])
+
+  return <span ref={ref}></span>
+}
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
@@ -26,6 +51,12 @@ const space = Space_Mono({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-space",
+});
+
+const cinzel= Cinzel({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-cinzel",
 });
 
 
@@ -54,7 +85,7 @@ const About = () => {
                   <h3
                     className={`${space.variable} font-space font-extrabold text-black text-3xl text-center p-5 underline underline-offset-4 mx-auto mb-16 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
                   >
-                    What About Me?
+                    WHAT ABOUT ME?
                   </h3>
                   <p
                     className={`${roboto.variable} font-roboto text-xl text-black font-medium text-center indent-12 leading-relaxed mt-5 `}
@@ -96,15 +127,48 @@ const About = () => {
                 </div>
               </div>
               <div className="w-full h-auto mx-auto flex flex-col justify-center pb-14">
-                <h3
-                  className={`${space.variable} font-space font-extrabold text-black text-3xl text-center p-5 mx-auto underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+                <div className="w-3/4 flex justify-evenly mx-auto mt-10 mb-14 py-5 rounded-lg counter">
+                  <div className="flex flex-col items-center">
+                    <span className="inline-block text-black text-7xl font-bold">
+                      <AnimatedNumbers value={2} />+
+                    </span>
+                    <h2
+                      className={`${cinzel.variable} font-cinzel text-3xl font-bold pt-3`}
+                    >
+                      Satisfied clients
+                    </h2>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="inline-block text-black text-7xl font-bold">
+                      <AnimatedNumbers value={2} />+
+                    </span>
+                    <h2
+                      className={`${cinzel.variable} font-cinzel text-3xl font-bold pt-3`}
+                    >
+                      Projects Completed
+                    </h2>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="inline-block text-black text-7xl font-bold">
+                      <AnimatedNumbers value={1} />+
+                    </span>
+                    <h2
+                      className={`${cinzel.variable} font-cinzel text-3xl font-bold pt-3`}
+                    >
+                      Years of Experience
+                    </h2>
+                  </div>
+                </div>
+                <h2
+                  className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto my-10 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
                 >
-                  What services do I offer?
-                </h3>
+                  WHAT SERVICES DO I OFFER?
+                </h2>
                 <ServiceCard />
               </div>
             </div>
           </div>
+          <Skills/>
         </Layout>
       </main>
     </>
