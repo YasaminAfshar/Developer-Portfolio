@@ -22,16 +22,16 @@ const saira = Saira_Condensed({
 const Skills = () => {
   return (
     <>
-      <div className='w-full h-auto mb-20'>
+      <div className='w-full h-auto mt-20 mb-20 pb-32'>
         <h2
-          className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto my-10 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+          className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
         >
           SKILLS
         </h2>
-        <div className="flex flex-row flex-wrap justify-center gap-16 h-full w-full">
+        <div className="flex flex-row flex-wrap justify-center gap-16 h-auto w-full">
           {Technologies.map((technology) => (
             <div
-              className="w-[7.5rem] h-[7.5rem] text-center"
+              className="w-[9rem] h-[9rem] text-center"
               key={technology.name}
             >
               <BallCanvas icon={technology.icon} />

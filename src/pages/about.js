@@ -1,13 +1,15 @@
 import Head from "next/head";
-import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import "animate.css";
 import { Rowdies, Roboto, Space_Mono, Cinzel } from "next/font/google";
+import React, { useEffect, useRef } from "react";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
+import "animate.css";
 import Layout from "@/components/Layout";
 import ServiceCard from "@/components/ServiceCard";
 import profileImage from "../../public/images/profile/perfil3.png";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 
 const AnimatedNumbers = ({value}) => {
@@ -79,7 +81,7 @@ const About = () => {
             Passion Fuels Purpose!
           </h1>
           <div className="flex justify-center items-center mt-14">
-            <div className="flex flex-col gap-16 w-full">
+            <div className="flex flex-col w-full">
               <div className="mx-auto w-full h-full flex gap-8 justify-between items-center">
                 <div className="w-auto h-auto mx-auto">
                   <h3
@@ -126,8 +128,8 @@ const About = () => {
                   />
                 </div>
               </div>
-              <div className="w-full h-auto mx-auto flex flex-col justify-center pb-14">
-                <div className="w-3/4 flex justify-evenly mx-auto mt-10 mb-14 py-5 rounded-lg counter">
+              <div className="w-full h-auto mx-auto flex flex-col justify-center mt-32">
+                <div className="w-3/4 flex justify-evenly mx-auto mb-20 py-5 rounded-lg counter">
                   <div className="flex flex-col items-center">
                     <span className="inline-block text-black text-7xl font-bold">
                       <AnimatedNumbers value={2} />+
@@ -159,16 +161,13 @@ const About = () => {
                     </h2>
                   </div>
                 </div>
-                <h2
-                  className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto my-10 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
-                >
-                  WHAT SERVICES DO I OFFER?
-                </h2>
                 <ServiceCard />
               </div>
             </div>
           </div>
           <Skills />
+          <Experience/>
+          <Education/>
         </Layout>
       </main>
     </>
