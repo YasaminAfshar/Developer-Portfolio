@@ -43,7 +43,7 @@ const Details = ({position, company, companyLink, companyImage, time, address, w
                 {time} | {address}
               </span>
               <p
-                className={`${roboto.variable} font-roboto w-full text-justify text-lg`}
+                className={`${roboto.variable} font-roboto w-full text-justify text-lg pt-4`}
               >
                 {work}
               </p>
@@ -83,9 +83,9 @@ const Experience = () => {
         }
     )
   return (
-    <div className="w-full h-auto flex flex-col justify-center items-center mt-20 mb-20">
+    <div className="w-full h-auto flex flex-col justify-center items-center mt-10 mb-20">
       <h2
-        className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto mt-10 mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+        className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
       >
         EXPERIENCE
       </h2>
