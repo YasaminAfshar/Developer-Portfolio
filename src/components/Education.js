@@ -112,13 +112,11 @@ const Education = () => {
       infinite: true,
       centerPadding: "40px",
       slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
       speed: 500,
       autoplay: true,
       autoplaySpeed: 4000,
       pauseOnHover: true,
-      // nextArrow: <NextArrow />,
-      // prevArrow: <PrevArrow />,
       responsive: [
         {
           breakpoint: 1280,
@@ -181,42 +179,42 @@ const Education = () => {
           <div>
             <Image
               src={frontend}
-              alt="Certificado de "
+              alt="Certificado de Desarrollo Web con HTML5 y CSS3"
               className="w-full h-auto"
             />
           </div>
-          <div >
+          <div>
             <Image
               src={javascript}
-              alt="Certificado de "
+              alt="Certificado de Javascript"
               className="w-full h-auto "
             />
           </div>
-          <div >
+          <div>
             <Image
               src={react}
-              alt="Certificado de "
+              alt="Certificado de React JS "
               className="w-full h-auto"
             />
           </div>
-          <div >
+          <div>
             <Image
               src={backend}
-              alt="Certificado de "
+              alt="Certificado de Desarrollo Backend"
               className="w-full h-auto"
             />
           </div>
           <div>
             <Image
               src={fullStack}
-              alt="Certificado de "
+              alt="Certificado de Desarrollo Full Stack"
               className="w-full h-auto"
             />
           </div>
           <div>
             <Image
               src={marketing}
-              alt="Certificado de "
+              alt="Certificado de Marketing Digital "
               className="w-full h-auto"
             />
           </div>
