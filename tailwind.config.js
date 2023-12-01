@@ -25,6 +25,7 @@ module.exports = withMT({
         cinzel: ["var(--font-cinzel)", ...fontFamily.sans],
         saira: ["var(--font-saira)", ...fontFamily.sans],
         mate: ["var(--font-mate)", ...fontFamily.sans],
+        economica: ["var(--font-economica)", ...fontFamily.sans],
       },
       colors: {
         dark: "#1b1b1b",

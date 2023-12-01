@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef} from "react";
 import { Space_Mono, Roboto, Mate_SC } from "next/font/google";
 import "animate.css";
 import Image from "next/image";
@@ -6,6 +6,8 @@ import Tilt from "react-vanilla-tilt";
 import Lilcon from "@/subComponents/Lilcon";
 import { motion, useScroll } from "framer-motion";
 import Slider from "react-slick";
+import { MdKeyboardDoubleArrowRight, MdKeyboardDoubleArrowLeft } from "react-icons/md";
+import styled from "styled-components";
 /* --------------------------------- ICONOS --------------------------------- */
 import coderhouse from "../../public/images/general/coderhouse.png";
 import hotmart from "../../public/images/general/logo-hotmart.png";
@@ -78,6 +80,30 @@ const Details = ({
   );
 };
 
+const Buttons = styled.div`
+  button {
+    width: 3.4rem;
+    height: 4rem;
+    background-color: #efeeee;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #5d036f;
+    position: absolute;
+    top: 45%;
+  }
+
+  .next {
+    right: -5rem;
+    font-size: 3.5rem;
+  }
+
+  .back {
+    left: -5rem;
+    font-size: 3.5rem;
+  }
+
+`;
+
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
 const space = Space_Mono({
@@ -106,11 +132,11 @@ const Education = () => {
     });
 
     const settings = {
-      dots: true,
+      dots: false,
+      arrows: false,
       className: "center",
       centerMode: true,
       infinite: true,
-      centerPadding: "40px",
       slidesToShow: 3,
       slidesToScroll: 1,
       speed: 500,
@@ -122,7 +148,10 @@ const Education = () => {
           breakpoint: 1280,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            centerMode: false,
           },
         },
         {
@@ -130,11 +159,15 @@ const Education = () => {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            initialSlide: 1,
+            infinite: true,
+            dots: false,
+            centerMode: false,
           },
         },
       ],
     };
+
+    const arrowRef = useRef(null);
 
   return (
     <div className=" w-full h-auto flex flex-col justify-center items-center mt-32 mb-36">
@@ -175,7 +208,7 @@ const Education = () => {
         </div>
       </div>
       <div className="w-[90%] h-full mt-40 mx-auto relative cursor-grabbing">
-        <Slider {...settings}>
+        <Slider ref={arrowRef} {...settings}>
           <div>
             <Image
               src={frontend}
@@ -219,6 +252,14 @@ const Education = () => {
             />
           </div>
         </Slider>
+        <Buttons>
+          <button onClick={() => arrowRef.current.slickPrev()} className="back">
+            <MdKeyboardDoubleArrowLeft />
+          </button>
+          <button onClick={() => arrowRef.current.slickNext()} className="next">
+            <MdKeyboardDoubleArrowRight />
+          </button>
+        </Buttons>
       </div>
     </div>
   );

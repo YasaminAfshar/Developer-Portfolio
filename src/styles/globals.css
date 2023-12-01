@@ -53,3 +53,11 @@
 .slick-slide>div{
     margin: 0 20px;
 }
+
+
+/* ------------------------------- CONTACT ME CSS ------------------------------- */
+
+.formColor {
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px, rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
