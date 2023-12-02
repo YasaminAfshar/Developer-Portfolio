@@ -74,7 +74,7 @@ const About = () => {
         />
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
-        <Layout className="pt-16 pb-20">
+        <Layout className="pt-16 pb-20 overflow-hidden">
           <h1
             className={`${rowdies.variable} font-rowdies w-auto mx-auto text-black text-8xl text-center font-medium tracking-wider cursor-default overflow-hidden titleShadow animate__animated animate__fadeInDown animate__slower animate__delay-1s`}
           >
