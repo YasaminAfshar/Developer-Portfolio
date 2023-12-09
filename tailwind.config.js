@@ -36,6 +36,10 @@ module.exports = withMT({
       animation: {
         "spin-slow": "spin 8s linear infinite",
       },
+      screens: {
+        "2lg":"1180px",
+        "1xl": "1490px",
+      },
     },
   },
   plugins: [],
