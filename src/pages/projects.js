@@ -1,160 +1,17 @@
 import React from 'react'
 import Head from "next/head";
-import Link from 'next/link';
-import Image from "next/image";
 import Layout from '@/components/Layout';
 import { motion } from "framer-motion";
-import { Rowdies, Economica, Merienda, Roboto } from "next/font/google";
+import { Rowdies } from "next/font/google";
 import "animate.css";
-import { Carousel } from "@material-tailwind/react";
-import { GithubIcon } from '@/subComponents/Icons';
-
-
-const FirstProjects = ({type,title,summary, img1 , img2, img3 ,link,github}) => {
-  return (
-    <article className="w-full flex flex-col 2lg:flex-row items-center gap-6 rounded-3xl border border-solid border-dark bg-light boxProject p-12 mb-28 cursor-default">
-      <Carousel
-        transition={{ duration: 2 }}
-        className="rounded-xl w-full 2lg:w-1/2 h-max overflow-hidden"
-        navigation={({ setActiveIndex, activeIndex, length }) => (
-          <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-            {new Array(length).fill("").map((_, i) => (
-              <span
-                key={i}
-                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                  activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                }`}
-                onClick={() => setActiveIndex(i)}
-              />
-            ))}
-          </div>
-        )}
-      >
-        <Image src={img1} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img2} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img3} alt={title} className="h-auto w-full object-cover" />
-      </Carousel>
-
-      <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between gap-4 1xl:gap-8 ">
-        <span
-          className={`${economica.variable} font-economica text-primary font-bold text-2xl 1xl:text-3xl tracking-wider`}
-        >
-          {type}
-        </span>
-        <Link
-          href={link}
-          target="_blank"
-          className="hover:underline underline-offset-3"
-        >
-          <h2
-            className={`${merienda.variable} font-merienda w-full my-2 text-2xl sm:text-3xl 1xl:text-4xl`}
-          >
-            {title}
-          </h2>
-        </Link>
-        <p
-          className={`${roboto.variable} font-roboto text-dark text-md 1xl:text-lg text-justify`}
-        >
-          {summary}
-        </p>
-        <div className="flex mt-2 items-center gap-6">
-          <Link href={github} target="_blank" className="w-14 hover:scale-50">
-            <GithubIcon />
-          </Link>
-          <Link
-            href={link}
-            target="_blank"
-            className="rounded-lg bg-dark text-light p-3 px-6 text-md 1xl:text-lg font bold"
-          >
-            Visit Project
-          </Link>
-        </div>
-      </div>
-    </article>
-  );
-}
-
-const SecondProjects = ({
-  type,
-  title,
-  summary,
-  img1,
-  img2,
-  img3,
-  link,
-  github,
-}) => {
-  return (
-    <article className="w-full flex flex-col 2lg:flex-row-reverse items-center gap-6 rounded-3xl border border-solid border-dark bg-light boxProject p-12 mb-28 cursor-default">
-      <Carousel
-        transition={{ duration: 2 }}
-        className="rounded-xl w-full 2lg:w-1/2 h-max overflow-hidden"
-        navigation={({ setActiveIndex, activeIndex, length }) => (
-          <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-            {new Array(length).fill("").map((_, i) => (
-              <span
-                key={i}
-                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                  activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                }`}
-                onClick={() => setActiveIndex(i)}
-              />
-            ))}
-          </div>
-        )}
-      >
-        <Image src={img1} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img2} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img3} alt={title} className="h-auto w-full object-cover" />
-      </Carousel>
-
-      <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between gap-4 1xl:gap-8 ">
-        <span
-          className={`${economica.variable} font-economica text-primary font-bold text-2xl 1xl:text-3xl tracking-wider`}
-        >
-          {type}
-        </span>
-        <Link
-          href={link}
-          target="_blank"
-          className="hover:underline underline-offset-3"
-        >
-          <h2
-            className={`${merienda.variable} font-merienda w-full my-2 text-2xl sm:text-3xl 1xl:text-4xl`}
-          >
-            {title}
-          </h2>
-        </Link>
-        <p
-          className={`${roboto.variable} font-roboto text-dark text-md 1xl:text-lg text-justify`}
-        >
-          {summary}
-        </p>
-        <div className="flex mt-2 items-center gap-6">
-          <Link href={github} target="_blank" className="w-14 hover:scale-50">
-            <GithubIcon />
-          </Link>
-          <Link
-            href={link}
-            target="_blank"
-            className="rounded-lg bg-dark text-light p-3 px-6 text-md 1xl:text-lg font bold"
-          >
-            Visit Project
-          </Link>
-        </div>
-      </div>
-    </article>
-  );
-};
-
-
+import { FirstProjects, SecondProjects, ThirdProjects, FourthProjects } from '@/components/BoxProjects';
 
 
 /* -------------------------------- IMAGENES -------------------------------- */
 
 import image1A from "../../public/images/projects/image-1-A.jpg"
 import image1B from "../../public/images/projects/image-1-B.jpg";
-import image1C from "../../public/images/projects/image-1-C.jpg"
+import image1C from "../../public/images/projects/image-1-C.jpg" 
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
@@ -164,24 +21,7 @@ const rowdies = Rowdies({
   variable: "--font-rowdies",
 });
 
-const economica = Economica({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-economica",
-});
-
-const merienda = Merienda({
-  weight: "900",
-  subsets: ["latin"],
-  variable: "--font-merienda",
-});
-
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-roboto",
-});
-
+ 
 const projects = () => {
   return (
     <>
@@ -201,8 +41,13 @@ const projects = () => {
             My Projects
           </h1>
 
-          <div className="w-full h-auto mx-auto my-24">
-            <div>
+          <div className="w-full h-auto mx-auto mt-24">
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.3 }}
+              viewport={{ once: true }}
+            >
               <FirstProjects
                 type="Website"
                 title="Online Shop Website"
@@ -213,8 +58,13 @@ const projects = () => {
                 link="https://minimal-nextjs-portfolio-website.vercel.app/projects"
                 github="https://github.com/YasaminAfshar/ProyectoFinalReactJS-AfsharinejadYasmin"
               />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.3 }}
+              viewport={{ once: true }}
+            >
               <SecondProjects
                 type="Website"
                 title="Online Shop Website"
@@ -225,7 +75,59 @@ const projects = () => {
                 link="https://minimal-nextjs-portfolio-website.vercel.app/projects"
                 github="https://github.com/YasaminAfshar/ProyectoFinalReactJS-AfsharinejadYasmin"
               />
+            </motion.div>
+            <div className="w-full flex flex-col lg:flex-row gap-12">
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1.3 }}
+                viewport={{ once: true }}
+                className="w-full"
+              >
+                <ThirdProjects
+                  type="Excel"
+                  title="Lista Empleados"
+                  summary="A professional Online Shop Website using React Js, Framer-motion, Tailwind CSS, Styled-components and other libraries. It has smooth page transitions, cool background effects, unique design and it is mobile responsive"
+                  img1={image1A}
+                  img2={image1B}
+                  img3={image1C}
+                  link="/curriculum.pdf"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1.3 }}
+                viewport={{ once: true }}
+                className="w-full"
+              >
+                <ThirdProjects
+                  type="Excel"
+                  title="Lista Empleados"
+                  summary="A professional Online Shop Website using React Js, Framer-motion, Tailwind CSS, Styled-components and other libraries. It has smooth page transitions, cool background effects, unique design and it is mobile responsive"
+                  img1={image1A}
+                  img2={image1B}
+                  img3={image1C}
+                  link="/curriculum.pdf"
+                />
+              </motion.div>
             </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.3 }}
+              viewport={{ once: true }}
+            >
+              <FourthProjects
+                type="Excel"
+                title="Online Shop Website"
+                summary="A professional Online Shop Website using React Js, Framer-motion, Tailwind CSS, Styled-components and other libraries. It has smooth page transitions, cool background effects, unique design and it is mobile responsive"
+                img1={image1A}
+                img2={image1B}
+                img3={image1C}
+                link="/curriculum.pdf"
+              />
+            </motion.div>
           </div>
         </Layout>
       </main>
