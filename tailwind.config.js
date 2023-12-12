@@ -26,6 +26,7 @@ module.exports = withMT({
         saira: ["var(--font-saira)", ...fontFamily.sans],
         mate: ["var(--font-mate)", ...fontFamily.sans],
         economica: ["var(--font-economica)", ...fontFamily.sans],
+        kurale: ["var(--font-kurale)", ...fontFamily.sans],
       },
       colors: {
         dark: "#1b1b1b",
@@ -37,8 +38,10 @@ module.exports = withMT({
         "spin-slow": "spin 8s linear infinite",
       },
       screens: {
+        "2sm": "700px",
+        "1md": "770px",
         "2md": "970px",
-        "2lg":"1180px",
+        "2lg": "1180px",
         "1xl": "1490px",
       },
     },

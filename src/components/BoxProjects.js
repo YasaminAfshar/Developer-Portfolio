@@ -222,7 +222,7 @@ export const ThirdProjects = ({
   link,
 }) => {
   return (
-    <article className="w-full flex flex-col items-center gap-6 rounded-3xl border border-solid border-dark bg-light boxProject p-12 mb-28 mx-auto cursor-default relative">
+    <article className="w-[90%] flex flex-col items-center gap-6 rounded-3xl border border-solid border-dark bg-light boxProject p-12 mb-28 mx-auto cursor-default relative">
       <div className="absolute top-1 -right-5 -z-10 w-[101%] h-[102%] rounded-[2.5rem] bg-dark" />
       <Carousel
         transition={{ duration: 2 }}
