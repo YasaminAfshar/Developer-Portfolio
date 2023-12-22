@@ -19,8 +19,8 @@ const Footer = () => {
     <footer
       className={`${abel.variable} font-abel w-full border-t-4 border-solid border-black font-semibold text-2xl text-black mx-auto cursor-default `}
     >
-      <Layout className="flex justify-between items-center py-8 ">
-        <span>
+      <Layout className="flex flex-col 2lg:flex-row justify-between items-center py-8 gap-8">
+        <span className="text-[1.08rem] xsm:text-2xl">
           {new Date().getFullYear()} &copy; All Rights Reserved by the Author
         </span>
         <Image
@@ -28,9 +28,8 @@ const Footer = () => {
           alt="Logo of Yasmin Afsharinejad"
           className="w-[110px] mx-auto"
         />
-        <div className="flex items-center">
-          Build With <span className="text-primary px-1 text-4xl">&#9825;</span>{" "}
-          By&nbsp;{" "}
+        <div className="flex items-center text-[1.08rem] xsm:text-2xl">
+          Build With <span className="text-primary px-1">&#9825;</span> By&nbsp;{" "}
           <Link
             href="https://www.linkedin.com/in/yasmin-afsharinejad-0826921a2/"
             target={"_blank"}

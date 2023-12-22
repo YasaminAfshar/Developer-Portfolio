@@ -76,21 +76,21 @@ const About = () => {
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16 pb-20 overflow-hidden">
           <h1
-            className={`${rowdies.variable} font-rowdies w-auto mx-auto text-black text-8xl text-center font-medium tracking-wider cursor-default overflow-hidden titleShadow animate__animated animate__fadeInDown animate__slower animate__delay-1s`}
+            className={`${rowdies.variable} font-rowdies w-auto mx-auto pb-6 text-black text-5xl sm:text-7xl 3lg:text-8xl text-center font-medium tracking-wider cursor-default overflow-hidden titleShadow animate__animated animate__fadeInDown animate__slower animate__delay-1s`}
           >
             Passion Fuels Purpose!
           </h1>
           <div className="flex justify-center items-center mt-14">
             <div className="flex flex-col w-full">
-              <div className="mx-auto w-full h-full flex gap-8 justify-between items-center">
-                <div className="w-auto h-auto mx-auto">
+              <div className="mx-auto w-full h-full flex flex-col xl:flex-row gap-10 xl:gap-8 justify-between items-center">
+                <div className="w-[95%] 1xl:w-auto h-auto mx-auto">
                   <h3
                     className={`${space.variable} font-space font-extrabold text-black text-3xl text-center p-5 underline underline-offset-4 mx-auto mb-16 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
                   >
                     WHAT ABOUT ME?
                   </h3>
                   <p
-                    className={`${roboto.variable} font-roboto text-xl text-black font-medium text-center indent-12 leading-relaxed mt-5 `}
+                    className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl text-black font-medium text-center indent-12 leading-relaxed mt-5 `}
                   >
                     As a <span className="font-bold">FULL STACK DEVELOPER</span>{" "}
                     with experience in{" "}
@@ -102,7 +102,7 @@ const About = () => {
                     and creating intuitive, enjoyable experiences for users.
                   </p>
                   <p
-                    className={`${roboto.variable} font-roboto text-xl text-black font-medium text-center indent-12 leading-relaxed mt-5 `}
+                    className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl text-black font-medium text-center indent-12 leading-relaxed mt-5 `}
                   >
                     Whether I'm working on a website, mobile app, or other
                     digital product, I bring my commitment to design excellence
@@ -111,7 +111,7 @@ const About = () => {
                     passion to your next project.
                   </p>
                   <p
-                    className={`${roboto.variable} font-roboto text-xl text-black font-medium text-center indent-12 leading-relaxed mt-5 `}
+                    className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl text-black font-medium text-center indent-12 leading-relaxed mt-5 `}
                   >
                     My main goal is to provide exceptional customer service,
                     exceeding their expectations in a world where technology
@@ -124,7 +124,7 @@ const About = () => {
                   <Image
                     src={profileImage}
                     alt="Profile image of Yasmin Afsharinejad"
-                    className="relative w-[80%] mx-auto h-auto rounded-2xl border-2 border-solid border-dark bg-light p-4 profileImage"
+                    className="relative w-[85%] 3sm:w-[50%] 1lg:w-[85%] mx-auto h-auto rounded-2xl border-2 border-solid border-dark bg-light p-4 profileImage"
                   />
                 </div>
               </div>
@@ -132,7 +132,7 @@ const About = () => {
                 <div className="w-3/4 flex justify-evenly mx-auto mb-20 py-5 rounded-lg counter">
                   <div className="flex flex-col items-center">
                     <span className="inline-block text-black text-7xl font-bold">
-                      <AnimatedNumbers value={2} />+
+                      <AnimatedNumbers value={1} />+
                     </span>
                     <h2
                       className={`${cinzel.variable} font-cinzel text-3xl font-bold pt-3`}
@@ -142,7 +142,7 @@ const About = () => {
                   </div>
                   <div className="flex flex-col items-center">
                     <span className="inline-block text-black text-7xl font-bold">
-                      <AnimatedNumbers value={2} />+
+                      <AnimatedNumbers value={1} />+
                     </span>
                     <h2
                       className={`${cinzel.variable} font-cinzel text-3xl font-bold pt-3`}
@@ -152,12 +152,12 @@ const About = () => {
                   </div>
                   <div className="flex flex-col items-center">
                     <span className="inline-block text-black text-7xl font-bold">
-                      <AnimatedNumbers value={1} />+
+                      <AnimatedNumbers value={4} />+
                     </span>
                     <h2
                       className={`${cinzel.variable} font-cinzel text-3xl font-bold pt-3`}
                     >
-                      Years of Experience
+                      Months of Experience
                     </h2>
                   </div>
                 </div>
@@ -166,8 +166,8 @@ const About = () => {
             </div>
           </div>
           <Skills />
-          <Experience/>
-          <Education/>
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
