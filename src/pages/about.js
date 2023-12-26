@@ -80,14 +80,14 @@ const About = () => {
           >
             Passion Fuels Purpose!
           </h1>
-          <div className="flex justify-center items-center mt-14">
+          <div className="flex justify-center items-center mt-20">
             <div className="flex flex-col w-full">
               <div className="mx-auto w-full h-full flex flex-col xl:flex-row gap-10 xl:gap-8 justify-between items-center">
                 <div className="w-[95%] 1xl:w-auto h-auto mx-auto">
                   <h3
-                    className={`${space.variable} font-space font-extrabold text-black text-3xl text-center p-5 underline underline-offset-4 mx-auto mb-16 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+                    className={`${space.variable} font-space font-extrabold text-black text-4xl text-center p-5 underline underline-offset-4 mx-auto mb-16 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
                   >
-                    WHAT ABOUT ME?
+                    What About Me?
                   </h3>
                   <p
                     className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl text-black font-medium text-center indent-12 leading-relaxed mt-5 `}
@@ -129,33 +129,33 @@ const About = () => {
                 </div>
               </div>
               <div className="w-full h-auto mx-auto flex flex-col justify-center mt-32">
-                <div className="w-3/4 flex justify-evenly mx-auto mb-20 py-5 rounded-lg counter">
-                  <div className="flex flex-col items-center">
-                    <span className="inline-block text-black text-7xl font-bold">
+                <div className="w-3/5 1md:w-[90%] flex flex-col 1md:flex-row justify-evenly gap-12 1md:gap-8 mx-auto mb-20 py-10 1md:py-8 rounded-lg counter text-center">
+                  <div className="w-auto flex flex-col justify-center items-center px-4">
+                    <span className="inline-block text-black text-6xl 3xl:text-7xl font-bold">
                       <AnimatedNumbers value={1} />+
                     </span>
                     <h2
-                      className={`${cinzel.variable} font-cinzel text-3xl font-bold pt-3`}
+                      className={`${cinzel.variable} font-cinzel text-2xl 3xl:text-3xl font-bold pt-3`}
                     >
                       Satisfied clients
                     </h2>
                   </div>
-                  <div className="flex flex-col items-center">
-                    <span className="inline-block text-black text-7xl font-bold">
+                  <div className="w-auto flex flex-col justify-center items-center px-4">
+                    <span className="inline-block text-black text-6xl  3xl:text-7xl  font-bold">
                       <AnimatedNumbers value={1} />+
                     </span>
                     <h2
-                      className={`${cinzel.variable} font-cinzel text-3xl font-bold pt-3`}
+                      className={`${cinzel.variable} font-cinzel text-2xl 3xl:text-3xl font-bold pt-3`}
                     >
                       Projects Completed
                     </h2>
                   </div>
-                  <div className="flex flex-col items-center">
-                    <span className="inline-block text-black text-7xl font-bold">
+                  <div className="w-auto flex flex-col justify-center items-center px-4">
+                    <span className="inline-block text-black text-6xl  3xl:text-7xl  font-bold">
                       <AnimatedNumbers value={4} />+
                     </span>
                     <h2
-                      className={`${cinzel.variable} font-cinzel text-3xl font-bold pt-3`}
+                      className={`${cinzel.variable} font-cinzel text-2xl 3xl:text-3xl font-bold pt-3`}
                     >
                       Months of Experience
                     </h2>

@@ -39,9 +39,9 @@ const ServiceCard = () => {
   return (
     <div className="mt-20">
       <h2
-        className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+        className={`${space.variable} font-space font-extrabold text-black text-4xl xsm:text-5xl text-center p-5 mx-auto underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
       >
-        WHAT SERVICES DO I OFFER?
+        What I Offer
       </h2>
       <div className="flex justify-center flex-wrap gap-6 my-20">
         <Tilt className="tilt">
