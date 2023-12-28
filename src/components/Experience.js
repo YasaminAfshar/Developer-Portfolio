@@ -12,13 +12,21 @@ const MotionImage = motion(Image)
 const Details = ({position, company, companyLink, companyImage, time, address, work}) => {
     const ref = useRef(null);
     return (
-      <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
-        <Lilcon reference={ref}/>
-        <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:"spring"}} className="flex gap-8 items-center">
+      <li
+        ref={ref}
+        className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      >
+        <Lilcon reference={ref} />
+        <motion.div
+          initial={{ y: 50 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1.5, type: "spring" }}
+          className="flex gap-8 items-center"
+        >
           <MotionImage
             src={companyImage}
             alt={company}
-            className="w-24"
+            className="w-24 mr-8"
             floated={false}
             animate={{
               scale: [1, 1.35, 1],
@@ -32,13 +40,27 @@ const Details = ({position, company, companyLink, companyImage, time, address, w
               repeatDelay: 3,
             }}
           />
-          <Tilt style={{ width: "100%", padding: "20px" }}>
-            <div className="cursor-default">
+          <Tilt
+            style={{
+              width: "100%",
+              padding: "20px",
+              background: "white",
+              borderRadius: "5%",
+            }}
+          >
+            <div className="cursor-default text-dark">
               <h3 className="font-bold text-[1.7rem]">
-                {position}&nbsp;<a href={companyLink} target="_blank" className='text-primary'>@{company}</a>
+                {position}&nbsp;
+                <a
+                  href={companyLink}
+                  target="_blank"
+                  className="text-primary dark:text-primaryDark"
+                >
+                  @{company}
+                </a>
               </h3>
               <span
-                className={`${mate.variable} font-mate capitalize font-semibold text-xl text-dark`}
+                className={`${mate.variable} font-mate capitalize font-semibold text-xl`}
               >
                 {time} | {address}
               </span>
@@ -85,14 +107,14 @@ const Experience = () => {
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center mt-10 mb-20">
       <h2
-        className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+        className={`${space.variable} font-space font-extrabold text-black dark:text-light text-5xl text-center p-5 mx-auto mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
       >
         EXPERIENCE
       </h2>
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-[3.4rem] top-1 w-[6px] h-full bg-dark origin-top"
+          className="absolute left-[3.4rem] top-1 w-[6px] h-full bg-dark origin-top dark:bg-light"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details

@@ -8,10 +8,11 @@ import { motion, useScroll } from "framer-motion";
 import Slider from "react-slick";
 import { MdKeyboardDoubleArrowRight, MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import styled from "styled-components";
+
 /* --------------------------------- ICONOS --------------------------------- */
 import coderhouse from "../../public/images/general/coderhouse.png";
 import hotmart from "../../public/images/general/logo-hotmart.png";
-import claseflix from "../../public/images/general/logo-claseflix.webp";
+
 /* ------------------------ IMAGENES DE CERTIFICADOS ------------------------ */
 import frontend from "../../public/images/certificates/certificado-desarrolloweb.png";
 import backend from "../../public/images/certificates/certificado-Backend.png";
@@ -44,7 +45,7 @@ const Details = ({
         <MotionImage
           src={logo}
           alt={place}
-          className="w-24"
+          className="w-24 mr-8"
           floated={false}
           animate={{
             scale: [1, 1.35, 1],
@@ -58,13 +59,18 @@ const Details = ({
             repeatDelay: 3,
           }}
         />
-        <Tilt style={{ width: "100%", padding: "20px" }}>
-          <div className="cursor-default">
-            <h3 className="font-bold text-[1.7rem]">
-              {type}
-            </h3>
+        <Tilt
+          style={{
+            width: "100%",
+            padding: "20px",
+            background: "white",
+            borderRadius: "5%",
+          }}
+        >
+          <div className="cursor-default text-dark">
+            <h3 className="font-bold text-[1.7rem]">{type}</h3>
             <span
-              className={`${mate.variable} font-mate capitalize font-semibold text-xl text-dark`}
+              className={`${mate.variable} font-mate capitalize font-semibold text-xl`}
             >
               {time} | {place}
             </span>
@@ -134,8 +140,6 @@ const Education = () => {
     const settings = {
       dots: false,
       arrows: false,
-      className: "center",
-      centerMode: true,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -173,14 +177,14 @@ const Education = () => {
     <div className=" w-full h-auto flex flex-col justify-center items-center mt-32 mb-36">
       <div className="w-full h-auto flex flex-col justify-center items-center ">
         <h2
-          className={`${space.variable} font-space font-extrabold text-black text-5xl text-center p-5 mx-auto mt-10 mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+          className={`${space.variable} font-space font-extrabold text-black dark:text-light text-5xl text-center p-5 mx-auto mt-10 mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
         >
           EDUCATION
         </h2>
         <div ref={ref} className="w-[75%] mx-auto relative">
           <motion.div
             style={{ scaleY: scrollYProgress }}
-            className="absolute left-[3.4rem] top-1 w-[6px] h-full bg-dark origin-top"
+            className="absolute left-[3.4rem] top-1 w-[6px] h-full bg-dark origin-top dark:bg-light"
           />
           <ul className="w-full flex flex-col items-start justify-between ml-4">
             <Details
@@ -198,10 +202,10 @@ const Education = () => {
               info="I took a Digital Marketing course awarded by the Hotmart platform without providing a certificate where they teach you how the world of Marketing works within the Digital era and how to use the knowledge obtained to sell the products and services offered by the platform. You learn the organic, launch and paid methods through advertising or platforms."
             />
             <Details
-              logo={claseflix}
+              logo={hotmart}
               type="Course of Excel from scratch"
               time="November 2023"
-              place="Platform Claseflix"
+              place="Platform Hotmart"
               info="I took a free course where they taught me how to use Excel as a professional for different types of needs, especially for managing large amounts of data. It consisted of three levels: initial, intermediate and professional. I also complemented this knowledge with other courses given by the Hotmart and YouTube platform."
             />
           </ul>

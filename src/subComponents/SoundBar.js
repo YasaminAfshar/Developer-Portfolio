@@ -24,7 +24,7 @@ const Line = ({ click, animationDelay }) => {
 
   return (
     <motion.div
-      className="bg-black h-7 w-1.5 mx-1"
+      className="bg-black h-7 w-1.5 mx-1 dark:bg-light"
       animate={controls}
     ></motion.div>
   );

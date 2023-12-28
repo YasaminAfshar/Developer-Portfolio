@@ -12,7 +12,7 @@ const space = Space_Mono({
 const TypewriterText = () => {
   return (
     <h3
-      className={`${space.variable} font-space text-black text-3xl text-center font-extrabold pt-2 my-2 mx-auto cursor-default overflow-hidden textShadow`}
+      className={`${space.variable} font-space text-black dark:text-light text-2xl 2xsm:text-3xl text-center font-extrabold pt-2 my-2 mx-auto cursor-default overflow-hidden textShadow`}
     >
       <Typewriter
         options={{

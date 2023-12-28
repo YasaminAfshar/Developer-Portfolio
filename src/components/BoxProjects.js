@@ -41,8 +41,8 @@ export const FirstProjects = ({
   github,
 }) => {
   return (
-    <article className="w-full flex flex-col 2lg:flex-row items-center gap-6 rounded-3xl border border-solid border-dark bg-light boxProject p-4 2sm:p-12 mb-28 cursor-default relative">
-      <div className="absolute top-1 -right-5 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark" />
+    <article className="w-full flex flex-col 2lg:flex-row items-center gap-6 rounded-3xl border border-solid border-dark bg-light  dark:border-light dark:bg-black boxProject p-4 2sm:p-12 mb-28 cursor-default relative">
+      <div className="absolute top-1 -right-5 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light" />
       <Carousel
         transition={{ duration: 2 }}
         className="rounded-xl w-full 2lg:w-1/2 h-max overflow-hidden"
@@ -65,9 +65,9 @@ export const FirstProjects = ({
         <Image src={img3} alt={title} className="h-auto w-full object-cover" />
       </Carousel>
 
-      <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between p-4 2sm:p-0 gap-4 1xl:gap-8 ">
+      <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between p-4 2sm:p-0 gap-4 1xl:gap-8 text-black dark:text-light">
         <span
-          className={`${economica.variable} font-economica text-primary font-bold text-2xl 1xl:text-3xl tracking-wider`}
+          className={`${economica.variable} font-economica text-primary dark:text-primaryDark font-bold text-2xl 1xl:text-3xl tracking-wider`}
         >
           {type}
         </span>
@@ -83,7 +83,7 @@ export const FirstProjects = ({
           </h2>
         </Link>
         <p
-          className={`${roboto.variable} font-roboto text-dark text-md 1xl:text-lg text-justify`}
+          className={`${roboto.variable} font-roboto text-md 1xl:text-lg text-justify`}
         >
           {summary}
         </p>
@@ -110,7 +110,7 @@ export const FirstProjects = ({
           <Link
             href={link}
             target="_blank"
-            className="rounded-lg bg-dark text-light p-3 px-6 text-sm text-center xsm:text-lg font-bold"
+            className="rounded-lg bg-dark text-light dark:bg-light dark:text-dark p-3 px-6 text-sm text-center xsm:text-lg font-bold"
           >
             Visit Project
           </Link>
@@ -131,8 +131,8 @@ export const SecondProjects = ({
   github,
 }) => {
   return (
-    <article className="w-full flex flex-col 2lg:flex-row-reverse items-center gap-6 rounded-3xl border border-solid border-dark bg-light boxProject p-4 2sm:p-12 mb-28 cursor-default relative">
-      <div className="absolute top-1 -right-5 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark" />
+    <article className="w-full flex flex-col 2lg:flex-row-reverse items-center gap-6 rounded-3xl border border-solid border-dark bg-light dark:border-light dark:bg-black boxProject p-4 2sm:p-12 mb-28 cursor-default relative">
+      <div className="absolute top-1 -right-5 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light" />
       <Carousel
         transition={{ duration: 2 }}
         className="rounded-xl w-full 2lg:w-1/2 h-max overflow-hidden"
@@ -155,9 +155,9 @@ export const SecondProjects = ({
         <Image src={img3} alt={title} className="h-auto w-full object-cover" />
       </Carousel>
 
-      <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between p-4 2sm:p-0 gap-4 1xl:gap-8 ">
+      <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between p-4 2sm:p-0 gap-4 1xl:gap-8 text-black dark:text-light ">
         <span
-          className={`${economica.variable} font-economica text-primary font-bold text-2xl 1xl:text-3xl tracking-wider`}
+          className={`${economica.variable} font-economica text-primary dark:text-primaryDark font-bold text-2xl 1xl:text-3xl tracking-wider`}
         >
           {type}
         </span>
@@ -173,7 +173,7 @@ export const SecondProjects = ({
           </h2>
         </Link>
         <p
-          className={`${roboto.variable} font-roboto text-dark text-md 1xl:text-lg text-justify`}
+          className={`${roboto.variable} font-roboto text-md 1xl:text-lg text-justify`}
         >
           {summary}
         </p>
@@ -200,7 +200,7 @@ export const SecondProjects = ({
           <Link
             href={link}
             target="_blank"
-            className="rounded-lg bg-dark text-light p-3 px-6 text-sm text-center xsm:text-lg font-bold"
+            className="rounded-lg bg-dark text-light dark:bg-light dark:text-dark p-3 px-6 text-sm text-center xsm:text-lg font-bold"
           >
             Visit Project
           </Link>
@@ -223,8 +223,8 @@ export const ThirdProjects = ({
   googleSheet
 }) => {
   return (
-    <article className="w-[90%] flex flex-col items-center gap-6 rounded-3xl border border-solid border-dark bg-light boxProject p-4 1xl:p-12 mb-28 mx-auto cursor-default relative">
-      <div className="absolute top-1 -right-5 -z-10 w-[101%] h-[102%] rounded-[2.5rem] bg-dark" />
+    <article className="w-[90%] flex flex-col items-center gap-6 rounded-3xl border border-solid border-dark bg-light dark:border-light dark:bg-black  boxProject p-4 1xl:p-12 mb-28 mx-auto cursor-default relative">
+      <div className="absolute top-1 -right-5 -z-10 w-[101%] h-[102%] rounded-[2.5rem] bg-dark dark:bg-light" />
       <Carousel
         transition={{ duration: 2 }}
         className="rounded-xl w-full h-max overflow-hidden"
@@ -247,9 +247,9 @@ export const ThirdProjects = ({
         <Image src={img3} alt={title} className="h-auto w-full object-cover" />
       </Carousel>
 
-      <div className="w-full h-auto flex flex-col items-start p-4 1xl:p-0 gap-4 1xl:gap-8 ">
+      <div className="w-full h-auto flex flex-col items-start p-4 1xl:p-0 gap-4 1xl:gap-8 text-black dark:text-light">
         <span
-          className={`${economica.variable} font-economica text-primary font-bold text-2xl 1xl:text-3xl tracking-wider`}
+          className={`${economica.variable} font-economica text-primary dark:text-primaryDark font-bold text-2xl 1xl:text-3xl tracking-wider`}
         >
           {type}
         </span>
@@ -265,7 +265,7 @@ export const ThirdProjects = ({
           </h2>
         </Link>
         <p
-          className={`${roboto.variable} font-roboto text-dark text-md 1xl:text-lg text-justify`}
+          className={`${roboto.variable} font-roboto text-md 1xl:text-lg text-justify`}
         >
           {summary}
         </p>
@@ -293,7 +293,7 @@ export const ThirdProjects = ({
             href={link}
             target="_blank"
             download={true}
-            className="rounded-lg bg-dark text-light p-3 px-6 text-sm text-center xsm:text-lg font-bold"
+            className="rounded-lg bg-dark text-light dark:bg-light dark:text-dark p-3 px-6 text-sm text-center xsm:text-lg font-bold"
           >
             Download Project
           </Link>
@@ -305,8 +305,8 @@ export const ThirdProjects = ({
 
 export const FourthProjects = ({ type, title, summary, img1, img2, img3, link, googleSheet }) => {
   return (
-    <article className="w-full flex flex-col 2lg:flex-row items-center gap-6 rounded-3xl border border-solid border-dark bg-light boxProject p-4 2sm:p-12 mb-28 cursor-default relative">
-      <div className="absolute top-1 -right-5 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark" />
+    <article className="w-full flex flex-col 2lg:flex-row items-center gap-6 rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-black boxProject p-4 2sm:p-12 mb-28 cursor-default relative">
+      <div className="absolute top-1 -right-5 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light" />
       <Carousel
         transition={{ duration: 2 }}
         className="rounded-xl w-full 2lg:w-1/2 h-max overflow-hidden"
@@ -329,9 +329,9 @@ export const FourthProjects = ({ type, title, summary, img1, img2, img3, link, g
         <Image src={img3} alt={title} className="h-auto w-full object-cover" />
       </Carousel>
 
-      <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between p-4 2sm:p-0 gap-4 1xl:gap-8 ">
+      <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between p-4 2sm:p-0 gap-4 1xl:gap-8 text-black dark:text-light ">
         <span
-          className={`${economica.variable} font-economica text-primary font-bold text-2xl 1xl:text-3xl tracking-wider`}
+          className={`${economica.variable} font-economica text-primary dark:text-primaryDark font-bold text-2xl 1xl:text-3xl tracking-wider`}
         >
           {type}
         </span>
@@ -347,7 +347,7 @@ export const FourthProjects = ({ type, title, summary, img1, img2, img3, link, g
           </h2>
         </Link>
         <p
-          className={`${roboto.variable} font-roboto text-dark text-md 1xl:text-lg text-justify`}
+          className={`${roboto.variable} font-roboto text-md 1xl:text-lg text-justify`}
         >
           {summary}
         </p>
@@ -375,7 +375,7 @@ export const FourthProjects = ({ type, title, summary, img1, img2, img3, link, g
             href={link}
             target="_blank"
             download={true}
-            className="rounded-lg bg-dark text-light p-3 px-6 text-sm text-center xsm:text-lg font-bold"
+            className="rounded-lg bg-dark text-light  dark:bg-light dark:text-dark p-3 px-6 text-sm text-center xsm:text-lg font-bold"
           >
             Download Project
           </Link>

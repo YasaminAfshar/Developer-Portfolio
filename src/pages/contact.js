@@ -135,7 +135,7 @@ const contact = () => {
 
         <main className="flex w-full flex-col items-center justify-center">
           <Layout className="pt-16 pb-20 overflow-hidden">
-            <div className="xl:my-16 flex xl:flex-row flex-col-reverse gap-10 my-12 ">
+            <div className="xl:my-16 flex xl:flex-row flex-col-reverse gap-10 my-12 text-black dark:text-light">
               <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
                 initial="hidden"
@@ -144,12 +144,12 @@ const contact = () => {
                 className="flex-[0.8] p-10 rounded-2xl formColor"
               >
                 <p
-                  className={`${economica.variable} font-economica w-auto italic text-black font-extrabold sm:text-3xl md:text-4xl text-2xl text-start tracking-wider cursor-default`}
+                  className={`${economica.variable} font-economica w-auto italic font-extrabold sm:text-3xl md:text-4xl text-2xl text-start tracking-wider cursor-default`}
                 >
                   Get in touch
                 </p>
                 <h3
-                  className={`${rowdies.variable} font-rowdies w-auto text-black text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl text-start font-medium tracking-wider cursor-default titleShadow`}
+                  className={`${rowdies.variable} font-rowdies w-auto text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl text-start font-medium tracking-wider cursor-default titleShadow`}
                 >
                   Contact Me.
                 </h3>
@@ -161,7 +161,7 @@ const contact = () => {
                 >
                   <label className="flex flex-col">
                     <span
-                      className={`${mate.variable} font-mate text-black font-extrabold text-xl tracking-wide mb-4`}
+                      className={`${mate.variable} font-mate font-extrabold text-xl tracking-wide mb-4`}
                     >
                       Your name
                     </span>
@@ -172,12 +172,12 @@ const contact = () => {
                       value={form.name}
                       onChange={handleChange}
                       placeholder="What's your name?"
-                      className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
+                      className="bg-tertiary py-4 px-6 placeholder:text-secondary rounded-lg outline-none border-none font-medium"
                     />
                   </label>
                   <label className="flex flex-col">
                     <span
-                      className={`${mate.variable} font-mate text-black font-extrabold text-xl tracking-wide mb-4`}
+                      className={`${mate.variable} font-mate font-extrabold text-xl tracking-wide mb-4`}
                     >
                       Your email
                     </span>
@@ -188,12 +188,12 @@ const contact = () => {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="What's your email?"
-                      className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
+                      className="bg-tertiary py-4 px-6 placeholder:text-secondary rounded-lg outline-none border-none font-medium"
                     />
                   </label>
                   <label className="flex flex-col">
                     <span
-                      className={`${mate.variable} font-mate text-black font-extrabold text-xl tracking-wide mb-4`}
+                      className={`${mate.variable} font-mate font-extrabold text-xl tracking-wide mb-4`}
                     >
                       Your message
                     </span>
@@ -203,7 +203,7 @@ const contact = () => {
                       value={form.message}
                       onChange={handleChange}
                       placeholder="What do you want to say?"
-                      className="bg-tertiary py-4 px-6 placeholder:text-secondary resize-none text-black rounded-lg outline-none border-none font-medium"
+                      className="bg-tertiary py-4 px-6 placeholder:text-secondary resize-none rounded-lg outline-none border-none font-medium"
                     />
                   </label>
 
@@ -213,7 +213,7 @@ const contact = () => {
                       variant="filled"
                       ripple={true}
                       type="submit"
-                      className={`${mate.variable} font-mate inline-block py-3 px-8 rounded-xl outline-none w-[190px] text-white text-xl tracking-wider font-bold`}
+                      className={`${mate.variable} font-mate inline-block py-3 px-8 rounded-xl outline-none w-[190px] bg-black dark:bg-light text-white dark:text-black text-xl tracking-wider font-bold`}
                     >
                       {loading ? "Sending..." : "Send"}
                     </Button>

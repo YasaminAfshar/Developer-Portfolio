@@ -10,6 +10,7 @@ module.exports = withMT({
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -33,6 +34,7 @@ module.exports = withMT({
         light: "#EFEEEE",
         primary: "#B63E96",
         primaryDark: "#58E6D9",
+        gold: "#C89502",
       },
       animation: {
         "spin-slow": "spin 8s linear infinite",
@@ -47,6 +49,7 @@ module.exports = withMT({
         "1lg": "1140px",
         "2lg": "1180px",
         "3lg": "1215px",
+        "4lg": "1315px",
         "1xl": "1490px",
         "3xl": "1620px",
       },

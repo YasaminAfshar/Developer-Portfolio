@@ -6,6 +6,7 @@ import { Rowdies, Kurale, Economica } from "next/font/google";
 import "animate.css";
 import { FourthProjects } from '@/components/BoxProjects';
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 
 /* -------------------------------- IMAGENES -------------------------------- */
@@ -39,15 +40,19 @@ const economica = Economica({
  
 const projects = () => {
 
-   const [category, setCategory] = useState("All"); 
+  const [category, setCategory] = useState("All"); 
+  const router = useRouter(); 
 
-   const handleCategoryChange = (newCategory) => {
-     setCategory(newCategory);
-   };
+  const handleCategoryChange = (newCategory) => {
+    setCategory(newCategory);
+  };
 
-   useEffect(() => {
-     setCategory("Websites");
-   }, []);
+  useEffect(() => {
+    const { category: urlCategory } = router.query;
+    if (urlCategory) {
+      setCategory(urlCategory);
+    }
+  }, [router.query]);
 
   return (
     <>
@@ -62,7 +67,7 @@ const projects = () => {
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16 pb-20 overflow-hidden">
           <h1
-            className={`${rowdies.variable} font-rowdies w-full mx-auto text-black text-5xl 2xsm:text-7xl 2sm:text-8xl text-center pb-8 font-medium tracking-wider cursor-default overflow-hidden titleShadow animate__animated animate__fadeInDown animate__slower animate__delay-1s`}
+            className={`${rowdies.variable} font-rowdies w-full mx-auto text-black dark:text-light text-5xl 2xsm:text-7xl 2sm:text-8xl text-center pb-8 font-medium tracking-wider cursor-default overflow-hidden titleShadow animate__animated animate__fadeInDown animate__slower animate__delay-1s`}
           >
             My Projects
           </h1>
@@ -94,11 +99,33 @@ const projects = () => {
           </div>
 
           <div className="w-full h-auto mx-auto mt-24">
+            {category === "All" && (
+              <>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 1.3 }}
+                  viewport={{ once: true }}
+                >
+                  <FourthProjects
+                    type="Excel"
+                    title="Point of Sale App"
+                    summary="We created a professional point of sale application with the possibility of printing the generated invoice, it has been configured in such a way that it works with thermal printing invoice. A form has been generated to register the products and the tickets generated can be accessed and downloaded in pdf format."
+                    img1={image1A}
+                    img2={image1B}
+                    img3={image1C}
+                    googleSheet="https://minimal-nextjs-portfolio-website.vercel.app/projects"
+                    link="/excelProjects/"
+                  />
+                </motion.div>
+              </>
+            )}
+
             {category === "Websites" && (
               <>
                 <div className="w-full flex flex-col justify-center items-center gap-10 my-40">
                   <h3
-                    className={`${economica.variable} font-economica text-black  text-4xl 1md:text-5xl text-center font-bold tracking-wider`}
+                    className={`${economica.variable} font-economica text-black dark:text-light text-4xl 1md:text-5xl text-center font-bold tracking-wider`}
                   >
                     Upss... I haven't created a project yet!
                   </h3>
@@ -115,7 +142,7 @@ const projects = () => {
               <>
                 <div className="w-full flex flex-col justify-center items-center gap-10 my-40">
                   <h3
-                    className={`${economica.variable} font-economica text-black  text-4xl 1md:text-5xl text-center font-bold tracking-wider`}
+                    className={`${economica.variable} font-economica text-black dark:text-light text-4xl 1md:text-5xl text-center font-bold tracking-wider`}
                   >
                     Upss... I haven't created a project yet!
                   </h3>
@@ -124,7 +151,7 @@ const projects = () => {
                     alt="Image of code with movement"
                     className="w-full lg:w-2/5 mt-14 "
                   />
-                </div> 
+                </div>
               </>
             )}
 
