@@ -125,6 +125,7 @@ const About = () => {
                     src={profileImage}
                     alt="Profile image of Yasmin Afsharinejad"
                     className="w-[85%] 3sm:w-[50%] 1lg:w-[85%] mx-auto h-auto rounded-2xl border-2 border-solid border-dark bg-dark dark:bg-light p-4"
+                    priority
                   />
                 </div>
               </div>

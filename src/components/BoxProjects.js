@@ -6,6 +6,7 @@ import { Economica, Merienda, Roboto } from "next/font/google";
 import {motion} from "framer-motion"
 
 const MotionLink = motion(Link);
+const MotionImage = motion(Image);
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
@@ -28,7 +29,7 @@ const roboto = Roboto({
 });
 
 
-/* ------------ MODELOS PARA LOS PROYECTOS DE FRONTEND Y BACKEND ------------ */
+/* ------------ MODELS FOR FRONTEND AND BACKEND PROJECTS ------------ */
 
 export const FirstProjects = ({
   type,
@@ -60,9 +61,30 @@ export const FirstProjects = ({
           </div>
         )}
       >
-        <Image src={img1} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img2} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img3} alt={title} className="h-auto w-full object-cover" />
+        <MotionImage
+          src={img1}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+        <MotionImage
+          src={img2}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+        <MotionImage
+          src={img3}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Carousel>
 
       <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between p-4 2sm:p-0 gap-4 1xl:gap-8 text-black dark:text-light">
@@ -150,9 +172,30 @@ export const SecondProjects = ({
           </div>
         )}
       >
-        <Image src={img1} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img2} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img3} alt={title} className="h-auto w-full object-cover" />
+        <MotionImage
+          src={img1}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+        <MotionImage
+          src={img2}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+        <MotionImage
+          src={img3}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Carousel>
 
       <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between p-4 2sm:p-0 gap-4 1xl:gap-8 text-black dark:text-light ">
@@ -210,7 +253,7 @@ export const SecondProjects = ({
   );
 };
 
-/* ------------- MODELO PARA LOS PROJECTOS DE DATA ENTRY (EXCEL) ------------ */
+/* ------------- MODELS FOR DATA ENTRY PROJECTS (EXCEL) ------------ */
 
 export const ThirdProjects = ({
   type,
@@ -242,9 +285,30 @@ export const ThirdProjects = ({
           </div>
         )}
       >
-        <Image src={img1} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img2} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img3} alt={title} className="h-auto w-full object-cover" />
+        <MotionImage
+          src={img1}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+        <MotionImage
+          src={img2}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+        <MotionImage
+          src={img3}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Carousel>
 
       <div className="w-full h-auto flex flex-col items-start p-4 1xl:p-0 gap-4 1xl:gap-8 text-black dark:text-light">
@@ -324,9 +388,30 @@ export const FourthProjects = ({ type, title, summary, img1, img2, img3, link, g
           </div>
         )}
       >
-        <Image src={img1} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img2} alt={title} className="h-auto w-full object-cover" />
-        <Image src={img3} alt={title} className="h-auto w-full object-cover" />
+        <MotionImage
+          src={img1}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+        <MotionImage
+          src={img2}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+        <MotionImage
+          src={img3}
+          alt={title}
+          className="h-auto w-full object-cover"
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Carousel>
 
       <div className="w-full 2lg:w-1/2 h-full flex flex-col items-start justify-between p-4 2sm:p-0 gap-4 1xl:gap-8 text-black dark:text-light ">
@@ -369,7 +454,7 @@ export const FourthProjects = ({ type, title, summary, img1, img2, img3, link, g
               repeatDelay: 3,
             }}
           >
-            <Excel/>
+            <Excel />
           </MotionLink>
           <Link
             href={link}
