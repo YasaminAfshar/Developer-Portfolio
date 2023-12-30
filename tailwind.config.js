@@ -40,6 +40,8 @@ module.exports = withMT({
         "spin-slow": "spin 8s linear infinite",
       },
       screens: {
+        "sm": "450px",
+        "x2sm": "475px",
         "xsm": "510px",
         "2xsm": "550px",
         "3xsm": "610px",

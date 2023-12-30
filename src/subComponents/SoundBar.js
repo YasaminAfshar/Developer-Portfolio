@@ -24,7 +24,7 @@ const Line = ({ click, animationDelay }) => {
 
   return (
     <motion.div
-      className="bg-gold h-7 w-1.5 mx-1 "
+      className="bg-black dark:bg-light h-7 w-1.5 mx-1 "
       animate={controls}
     ></motion.div>
   );
@@ -45,7 +45,7 @@ const SoundBar = () => {
   };
 
   return (
-    <div className="flex z-10 mx-8 cursor-pointer" onClick={handleClick}>
+    <div className="flex z-10 mx-4 2xsm:mx-8 cursor-pointer" onClick={handleClick}>
       <Line click={click} animationDelay={0.1} />
       <Line click={click} animationDelay={0.3} />
       <Line click={click} animationDelay={0.5} />

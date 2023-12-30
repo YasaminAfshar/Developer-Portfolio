@@ -135,7 +135,7 @@ const contact = () => {
 
         <main className="flex w-full flex-col items-center justify-center">
           <Layout className="pt-16 pb-20 overflow-hidden">
-            <div className="xl:my-16 flex xl:flex-row flex-col-reverse gap-10 my-12 text-black dark:text-light">
+            <div className="my-2 3sm:my-8 xl:my-16 flex xl:flex-row flex-col-reverse gap-10 text-black dark:text-light">
               <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
                 initial="hidden"
@@ -227,7 +227,7 @@ const contact = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+                className="w-auto xl:flex-1 items-center h-[350px] 1lg:h-[700px] 4lg:h-auto x2sm:h-[550px] "
               >
                 <EarthCanvas />
               </motion.div>

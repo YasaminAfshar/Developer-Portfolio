@@ -63,7 +63,7 @@ const NavBar = () => {
   }
 
   return (
-    <header className="relative w-full px-32 py-8 font-medium text-lg 1xxl:text-xl flex items-center justify-between dark:text-white">
+    <header className="relative w-full z-30 px-8 2xsm:px-16 1lg:px-32 py-8 font-medium text-lg 1xxl:text-xl flex items-center justify-between dark:text-white">
       <button
         className="flex 4lg:hidden flex-col justify-center items-center p-2 "
         onClick={handleClick}
@@ -92,7 +92,6 @@ const NavBar = () => {
           <CustomLink href="/contact" title="CONTACT" className="ml-4" />
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
-          <SoundBar />
           <motion.a
             href="https://github.com/YasaminAfshar"
             target={"_blank"}
@@ -202,8 +201,9 @@ const NavBar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute left-[50%] top-4 translate-x-[50%]">
+      <div className="absolute flex items-center gap-0 1md:gap-8 left-[32%] sm:left-[36%] 2xsm:left-[40%] 1lg:left-[50%] top-6 translate-x-[5%]">
         <Logo />
+        <SoundBar />
       </div>
     </header>
   );

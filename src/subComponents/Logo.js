@@ -9,7 +9,7 @@ const Logo = () => {
     <div className="flex items-center justify-center mt-2">
       <MotionLink
         href="/"
-        className="w-16 h-16 bg-dark flex justify-center items-center rounded-full border-2 border-solid border-transparent dark:border-light"
+        className="w-12 1md:w-16 h-12 1md:h-16 bg-dark flex justify-center items-center rounded-full border-2 border-solid border-transparent dark:border-light"
         whileHover={{
           scale: 1.2,
           rotate: 180,
@@ -30,7 +30,7 @@ const Logo = () => {
         }}
       >
         <img
-          className="w-11"
+          className="w-8 1md:w-11"
           src="https://res.cloudinary.com/dsrdpgpzy/image/upload/v1698358254/Portfolio/svgs/power-off_jmq6ev.svg"
           alt="Botón con acceso directo a la página HOME"
         />
