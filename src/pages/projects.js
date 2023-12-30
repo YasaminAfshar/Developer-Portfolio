@@ -73,7 +73,7 @@ const projects = () => {
           </h1>
 
           <div
-            className={`${kurale.variable} font-kurale text-2xl 2xsm:text-4xl text-black tracking-wider font-bold flex flex-col 2sm:flex-row justify-between 2sm:justify-center items-center gap-8 2sm:gap-16 w-full mx-auto mt-20`}
+            className={`${kurale.variable} font-kurale text-2xl 3sm:text-4xl text-black tracking-wider font-bold flex flex-col 2sm:flex-row justify-between 2sm:justify-center items-center gap-8 2sm:gap-16 w-full mx-auto mt-20`}
           >
             <motion.button
               onClick={() => handleCategoryChange("Websites")}

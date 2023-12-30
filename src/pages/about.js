@@ -82,7 +82,7 @@ const About = () => {
           </h1>
           <div className="flex justify-center items-center mt-20">
             <div className="flex flex-col w-full">
-              <div className="mx-auto w-full h-full flex flex-col xl:flex-row gap-10 xl:gap-8 justify-between items-center">
+              <div className="mx-auto w-full h-full flex flex-col xxl:flex-row gap-16 xxl:gap-8 justify-between items-center">
                 <div className="w-[95%] 1xl:w-auto h-auto mx-auto">
                   <h3
                     className={`${space.variable} font-space font-extrabold text-4xl text-center p-5 underline underline-offset-4 mx-auto mb-16 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
@@ -124,7 +124,7 @@ const About = () => {
                   <Image
                     src={profileImage}
                     alt="Profile image of Yasmin Afsharinejad"
-                    className="w-[85%] 3sm:w-[50%] 1lg:w-[85%] mx-auto h-auto rounded-2xl border-2 border-solid border-dark bg-dark dark:bg-light p-4"
+                    className="w-[85%] 2sm:w-[60%] 2md:w-[45%] xxl:w-[85%] mx-auto h-auto rounded-2xl border-2 border-solid border-dark bg-dark dark:bg-light p-4"
                     priority
                   />
                 </div>

@@ -7,9 +7,9 @@ const Lilcon = ({reference}) => {
       offset: ["center end", "center center"],
     });
   return (
-    <figure className="absolute left-0 stroke-dark dark:stroke-light">
+    <figure className="absolute -left-2 1md:left-0 stroke-dark dark:stroke-light">
       <svg
-        className="-rotate-90"
+        className="-rotate-90 w-[90px] 1md:w-[115px] h-[90px] 1md:h-[115px]"
         width="115"
         height="115"
         viewBox="0 0 100 100"
@@ -24,7 +24,7 @@ const Lilcon = ({reference}) => {
           cx="75"
           cy="50"
           r="22"
-          className="stroke-[6px] fill-light dark:fill-dark"
+          className="stroke-[4px] 1md:stroke-[6px] fill-light dark:fill-dark"
           style={{ pathLength: scrollYProgress }}
         />
         <circle

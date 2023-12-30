@@ -33,19 +33,19 @@ const Details = ({
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-full 1md:w-[80%] mx-auto flex flex-col items-center justify-between"
     >
       <Lilcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1.5, type: "spring" }}
-        className="flex gap-8 items-center"
+        className="flex gap-10 ml-28 items-center"
       >
         <MotionImage
           src={logo}
           alt={place}
-          className="w-24 mr-8"
+          className="w-20  mr-4 hidden 2lg:inline-block"
           floated={false}
           animate={{
             scale: [1, 1.35, 1],
@@ -68,14 +68,37 @@ const Details = ({
           }}
         >
           <div className="cursor-default text-dark">
-            <h3 className="font-bold text-[1.7rem]">{type}</h3>
-            <span
-              className={`${mate.variable} font-mate capitalize font-semibold text-xl`}
-            >
-              {time} | {place}
-            </span>
+            <div className="w-full flex flex-col 2lg:flex-row items-center justify-center 2lg:justify-start">
+              <div className="text-center 2lg:text-start">
+                <h3 className="font-bold text-[1.2rem] 1md:text-[1.4rem] 2md:text-[1.7rem]">
+                  {type}
+                </h3>
+                <span
+                  className={`${mate.variable} font-mate capitalize font-semibold text-lg 2md:text-xl`}
+                >
+                  {time} | {place}
+                </span>
+              </div>
+              <MotionImage
+                src={logo}
+                alt={place}
+                className="w-16 my-6 inline-block 2lg:hidden"
+                floated={false}
+                animate={{
+                  scale: [1, 1.35, 1],
+                  rotate: [0, 360, 0],
+                }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  times: [0.2, 0.5, 0.8],
+                  repeat: Infinity,
+                  repeatDelay: 3,
+                }}
+              />
+            </div>
             <p
-              className={`${roboto.variable} font-roboto w-full text-justify text-lg pt-4`}
+              className={`${roboto.variable} font-roboto w-full text-justify  text-base 2md:text-lg  pt-0 2lg:pt-4`}
             >
               {info}
             </p>
@@ -108,7 +131,23 @@ const Buttons = styled.div`
     font-size: 3.5rem;
   }
 
-`;
+  @media only screen and (max-width: 780px) {
+    button {
+      width: 2.8rem;
+      height: 3.2rem;
+    }
+
+    .next {
+      right: -3rem;
+      font-size: 2.6rem;
+    }
+
+    .back {
+      left: -3rem;
+      font-size: 2.6rem;
+    }
+  }
+`; 
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
@@ -181,12 +220,15 @@ const Education = () => {
         >
           EDUCATION
         </h2>
-        <div ref={ref} className="w-[75%] mx-auto relative">
+        <div
+          ref={ref}
+          className="w-full 2md:w-[90%] 1xl:w-[75%] mx-auto relative"
+        >
           <motion.div
             style={{ scaleY: scrollYProgress }}
-            className="absolute left-[3.4rem] top-1 w-[6px] h-full bg-dark origin-top dark:bg-light"
+            className="absolute left-[2.2rem] 1md:left-[3.4rem] top-1 w-[4px] 1md:w-[6px] h-full bg-dark origin-top dark:bg-light"
           />
-          <ul className="w-full flex flex-col items-start justify-between ml-4">
+          <ul className="w-full flex flex-col items-start justify-between ml-0 3sm:ml-4">
             <Details
               logo={coderhouse}
               type="Course of Full-Stack Developer"
