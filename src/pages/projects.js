@@ -39,7 +39,7 @@ const economica = Economica({
 });
 
  
-const Projects = () => {
+const projects = () => {
 
   const [category, setCategory] = useState("All"); 
   const router = useRouter(); 
@@ -184,7 +184,7 @@ const Projects = () => {
   );
 }
 
-export default Projects
+export default projects
 
 
 

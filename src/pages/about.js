@@ -63,7 +63,7 @@ const cinzel= Cinzel({
 });
 
 
-const About = () => {
+const about = () => {
 
   return (
     <>
@@ -177,4 +177,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default about;
