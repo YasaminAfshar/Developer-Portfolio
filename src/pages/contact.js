@@ -8,6 +8,7 @@ import { Button, Spinner } from "@material-tailwind/react";
 
 import EarthCanvas from '@/subComponents/Earth';
 import Modal from '@/components/Modal';
+import TransitionEffect from '@/components/hooks/TransitionEffect';
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
@@ -132,7 +133,7 @@ const contact = () => {
             content="Right now, you are on the CONTACT PAGE where you can send me a question or request an interview."
           />
         </Head>
-
+        <TransitionEffect/>
         <main className="flex w-full flex-col items-center justify-center">
           <Layout className="pt-16 pb-20 overflow-hidden">
             <div className="my-2 3sm:my-8 xl:my-16 flex xl:flex-row flex-col-reverse gap-10 text-black dark:text-light">

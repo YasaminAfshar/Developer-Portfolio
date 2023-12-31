@@ -10,6 +10,7 @@ import { LinkArrow } from "@/subComponents/Icons";
 import { Special_Elite, Unna, Inconsolata } from "next/font/google";
 import portfileImg from "../../public/images/svgs/header-img.svg";
 import Cube from "@/subComponents/Cube";
+import TransitionEffect from "@/components/hooks/TransitionEffect";
 
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
@@ -42,6 +43,7 @@ export default function Home() {
           content="I have created this beautiful portfolio so that you can access all the work and projects carried out in what I like most, which is programming"
         />
       </Head>
+      <TransitionEffect/>
       <main className="flex items-center text-black w-full min-h-full dark:text-light">
         <Layout className="pt-10 pb-20">
           <div className="flex flex-col 1lg:flex-row justify-center 1lg:justify-between items-center w-full pb-10 1xl:pb-0">

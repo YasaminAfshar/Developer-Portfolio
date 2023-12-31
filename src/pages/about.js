@@ -10,6 +10,7 @@ import profileImage from "../../public/images/profile/perfil3.png";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import TransitionEffect from "@/components/hooks/TransitionEffect";
 
 
 const AnimatedNumbers = ({value}) => {
@@ -73,6 +74,7 @@ const About = () => {
           content="Right now, you are on the ABOUT PAGE where you will find a description of my knowledge and experiences in the field of programming, digital marketing and data entry."
         />
       </Head>
+      <TransitionEffect/>
       <main className="flex w-full flex-col items-center justify-center text-black dark:text-light">
         <Layout className="pt-16 pb-20 overflow-hidden">
           <h1

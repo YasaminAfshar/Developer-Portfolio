@@ -16,6 +16,7 @@ import image1B from "../../public/images/projects/image-1-B.jpg"
 import image1C from "../../public/images/projects/image-1-C.jpg" 
 
 import gifted from "../../public/images/general/gifted.png"
+import TransitionEffect from "@/components/hooks/TransitionEffect";
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 
@@ -63,7 +64,7 @@ const projects = () => {
           content="Right now, you are on the PROJECTS PAGE where you will be able to visualize all the projects that I have been doing to date."
         />
       </Head>
-
+      <TransitionEffect/>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16 pb-20 overflow-hidden">
           <h1

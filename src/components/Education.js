@@ -256,45 +256,57 @@ const Education = () => {
       <div className="w-[90%] h-full mt-40 mx-auto relative cursor-grabbing">
         <Slider ref={arrowRef} {...settings}>
           <div>
-            <Image
+            <MotionImage
               src={frontend}
               alt="Certificado de Desarrollo Web con HTML5 y CSS3"
-              className="w-full h-auto"
+              className="w-full h-auto object-cover"
+              whileHover={{ scale: 1.3 }}
+              transition={{ duration: 0.2 }}
             />
           </div>
           <div>
-            <Image
+            <MotionImage
               src={javascript}
               alt="Certificado de Javascript"
-              className="w-full h-auto "
+              className="w-full h-auto  object-cover"
+              whileHover={{ scale: 1.3 }}
+              transition={{ duration: 0.2 }}
             />
           </div>
           <div>
-            <Image
+            <MotionImage
               src={react}
               alt="Certificado de React JS "
-              className="w-full h-auto"
+              className="w-full h-auto  object-cover"
+              whileHover={{ scale: 1.3 }}
+              transition={{ duration: 0.2 }}
             />
           </div>
           <div>
-            <Image
+            <MotionImage
               src={backend}
               alt="Certificado de Desarrollo Backend"
-              className="w-full h-auto"
+              className="w-full h-auto  object-cover"
+              whileHover={{ scale: 1.3 }}
+              transition={{ duration: 0.2 }}
             />
           </div>
           <div>
-            <Image
+            <MotionImage
               src={fullStack}
               alt="Certificado de Desarrollo Full Stack"
-              className="w-full h-auto"
+              className="w-full h-auto  object-cover"
+              whileHover={{ scale: 1.3 }}
+              transition={{ duration: 0.2 }}
             />
           </div>
           <div>
-            <Image
+            <MotionImage
               src={marketing}
               alt="Certificado de Marketing Digital "
-              className="w-full h-auto"
+              className="w-full h-auto object-cover"
+              whileHover={{ scale: 1.3 }}
+              transition={{ duration: 0.2 }}
             />
           </div>
         </Slider>
