@@ -30,7 +30,7 @@ const mate = Mate_SC({
   variable: "--font-mate",
 });
 
-const contact = () => {
+const Contact = () => {
     const formRef = useRef();
     const [form, setForm] = useState({
         name: "",
@@ -245,4 +245,4 @@ const contact = () => {
     );
 }
 
-export default contact
+export default Contact

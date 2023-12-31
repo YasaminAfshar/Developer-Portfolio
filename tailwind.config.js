@@ -55,6 +55,7 @@ module.exports = withMT({
         "4lg": "1315px",
         "5lg": "1380px",
         "xxl": "1250px",
+        "0xl": "1430px",
         "1xl": "1490px",
         "1xxl": "1560px",
         "3xl": "1620px",

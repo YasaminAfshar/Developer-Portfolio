@@ -39,7 +39,7 @@ const economica = Economica({
 });
 
  
-const projects = () => {
+const Projects = () => {
 
   const [category, setCategory] = useState("All"); 
   const router = useRouter(); 
@@ -128,7 +128,7 @@ const projects = () => {
                   <h3
                     className={`${economica.variable} font-economica text-black dark:text-light text-4xl 1md:text-5xl text-center font-bold tracking-wider`}
                   >
-                    Upss... I haven't created a project yet!
+                    Upss... I have not created a project yet!
                   </h3>
                   <Image
                     src={gifted}
@@ -145,7 +145,7 @@ const projects = () => {
                   <h3
                     className={`${economica.variable} font-economica text-black dark:text-light text-4xl 1md:text-5xl text-center font-bold tracking-wider`}
                   >
-                    Upss... I haven't created a project yet!
+                    Upss... I have not created a project yet!
                   </h3>
                   <Image
                     src={gifted}
@@ -184,7 +184,7 @@ const projects = () => {
   );
 }
 
-export default projects
+export default Projects
 
 
 

@@ -77,7 +77,7 @@ export default function Home() {
                 precision, attention to detail, and a commitment to excellence.
                 Your success is my priority.
               </p>
-              <div className="w-full h-max flex justify-center 3xsm:justify-start 3sm:justify-center 1lg:justify-start items-center mt-4 ml-0 3xsm:ml-20 3sm:ml-0 1lg:ml-16">
+              <div className="w-full h-max flex justify-center 2sm:justify-start 3sm:justify-center 1lg:justify-start items-center mt-4 ml-0 2sm:ml-20 3sm:ml-0 1lg:ml-16">
                 <Link
                   href="/curriculum.pdf"
                   target={"_blank"}

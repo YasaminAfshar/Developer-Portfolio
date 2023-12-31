@@ -15,7 +15,7 @@ const Cube = () => {
       setIsBrowser(true);
 
       const handleResize = () => {
-        if (window.innerWidth <= 610) {
+        if (window.innerWidth <= 699) {
           setCanvasSize({ width: "24rem", height: "20rem" }); 
         } else {
           setCanvasSize({ width: "16rem", height: "14rem" });
@@ -35,15 +35,16 @@ const Cube = () => {
         return null; 
     }
 
-    const texture_1 = useLoader(TextureLoader, "/images/cube/computer.jpg");
-    const texture_2 = useLoader(TextureLoader, "/images/cube/dataEntry.jpg");
-    const texture_3 = useLoader(TextureLoader, "/images/cube/marketing.jpg");
-    const texture_4 = useLoader(TextureLoader,"/images/cube/online-marketing.jpg");
-    const texture_5 = useLoader(TextureLoader, "/images/cube/virtual.jpg");
-    const texture_6 = useLoader(TextureLoader, "/images/cube/web.jpg");
+   const textureLoader = new TextureLoader();
+   const texture_1 = textureLoader.load("/images/cube/computer.jpg");
+   const texture_2 = textureLoader.load("/images/cube/dataEntry.jpg");
+   const texture_3 = textureLoader.load("/images/cube/marketing.jpg");
+   const texture_4 = textureLoader.load("/images/cube/online-marketing.jpg");
+   const texture_5 = textureLoader.load("/images/cube/virtual.jpg");
+   const texture_6 = textureLoader.load("/images/cube/web.jpg");
 
     return (
-      <div className="inline-block 3xsm:absolute mt-10 3xsm:mt-0 right-0 3xsm:-right-14 5lg:right-0 bottom-0 3xsm:-bottom-24 1md:-bottom-28 w-auto h-auto">
+      <div className="inline-block 2sm:absolute mt-10 3xsm:mt-0 right-0 1md:-right-14 5lg:right-0 bottom-0 3xsm:-bottom-24 1md:-bottom-28 w-auto h-auto">
         <Canvas style={canvasSize}>
           <OrbitControls enableZoom={false} autoRotate={true} />
           <ambientLight intensity={1} />
