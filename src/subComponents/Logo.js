@@ -31,6 +31,8 @@ const Logo = () => {
       >
         <img
           className="w-8 1md:w-11"
+          width={"auto"}
+          height={"auto"}
           src="https://res.cloudinary.com/dsrdpgpzy/image/upload/v1698358254/Portfolio/svgs/power-off_jmq6ev.svg"
           alt="Button with direct access to Home Page"
         />

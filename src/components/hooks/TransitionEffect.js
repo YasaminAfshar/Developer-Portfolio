@@ -1,6 +1,5 @@
 import React from 'react'
 import {motion} from "framer-motion"
-import { M_PLUS_1 } from 'next/font/google'
 
 const TransitionEffect = () => {
   return (
