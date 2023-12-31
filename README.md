@@ -3,7 +3,8 @@
   <img src="https://res.cloudinary.com/dsrdpgpzy/image/upload/v1703996887/Portfolio/logo_xpgqiw.png" alt="My own logo">
 </p>
 <p align="justify">I have created this beautiful portfolio so that you can access all the work and projects carried out in what I like most, which is programming. I was able to create this magnificent portfolio thanks to the contributions of fellow programmers who, from YouTube, have taught me beyond what I learned in the courses. It was created with love and a lot of enthusiasm to continue learning. </p>
-This repository contains the Final code for The Portfolio Website created <br/>
+
+This repository contains the Final code for The Portfolio Website created. <br/>
 
 If you want to access the page to view the portfolio, you can do so from the following link👇: <br/>
 <br/>
