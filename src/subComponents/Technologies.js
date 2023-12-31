@@ -1,20 +1,3 @@
-/* 
-import html from "../../public/images/icons/html.png";
-import css from "../../public/images/icons/css.png";
-import bootstrap from "../../public/images/icons/bootstrap.png";
-import canva from "../../public/images/icons/canva.png";
-import framer from "../../public/images/icons/framer.png";
-import github from "../../public/images/icons/github.png";
-import javascript from "../../public/images/icons/javascript.png";
-import mongodb from "../../public/images/icons/mongodb.png";
-import nextjs from "../../public/images/icons/nextjs.png";
-import nodejs from "../../public/images/icons/nodejs.png";
-import reactjs from "../../public/images/icons/reactjs.png";
-import sass from "../../public/images/icons/sass.png";
-import tailwindcss from "../../public/images/icons/tailwindcss.png";
-import threejs from "../../public/images/icons/threejs.png";
-import microsoft from "../../public/images/icons/microsoft.png";
-import figma from "../../public/images/icons/figma.png"; */
 
 const Technologies = [
   {

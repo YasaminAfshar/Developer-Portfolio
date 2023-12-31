@@ -32,7 +32,7 @@ const Logo = () => {
         <img
           className="w-8 1md:w-11"
           src="https://res.cloudinary.com/dsrdpgpzy/image/upload/v1698358254/Portfolio/svgs/power-off_jmq6ev.svg"
-          alt="Botón con acceso directo a la página HOME"
+          alt="Button with direct access to Home Page"
         />
       </MotionLink>
     </div>
