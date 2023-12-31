@@ -87,9 +87,9 @@ const NavBar = () => {
       <div className="w-full hidden 4lg:flex justify-between items-center">
         <nav>
           <CustomLink href="/" title="HOME" className="mr-4" />
-          <CustomLink href="/About" title="ABOUT" className="mx-4" />
-          <CustomLink href="/Projects" title="PROJECTS" className="mx-4" />
-          <CustomLink href="/Contact" title="CONTACT" className="ml-4" />
+          <CustomLink href="/about" title="ABOUT" className="mx-4" />
+          <CustomLink href="/projects" title="PROJECTS" className="mx-4" />
+          <CustomLink href="/contact" title="CONTACT" className="ml-4" />
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
@@ -146,23 +146,22 @@ const NavBar = () => {
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink href="/" title="HOME" toggle={handleClick} />
             <CustomMobileLink
-              href="/About"
+              href="/about"
               title="ABOUT"
               toggle={handleClick}
             />
             <CustomMobileLink
-              href="/Projects"
+              href="/projects"
               title="PROJECTS"
               toggle={handleClick}
             />
             <CustomMobileLink
-              href="/Contact"
+              href="/contact"
               title="CONTACT"
               toggle={handleClick}
             />
           </nav>
           <nav className="flex items-center gap-6 xsm:gap-10 justify-center flex-wrap mt-14 3xsm:mt-10">
-            {/* <SoundBar /> */}
             <motion.a
               href="https://github.com/YasaminAfshar"
               target={"_blank"}
