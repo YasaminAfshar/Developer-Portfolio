@@ -66,7 +66,7 @@ export default function Home() {
               <h1
                 className={`${special.variable} font-special w-auto text-3xl 2xsm:text-4xl 2sm:text-5xl 3sm:text-6xl 1lg:text-4xl 4lg:text-5xl 3xl:text-6xl text-center font-bold pt-2 my-2 px-2 mx-auto cursor-default overflow-hidden titleShadow`}
               >
-                I'm Yasmin Afsharinejad
+                I am Yasmin Afsharinejad
               </h1>
               <TypewriterText />
               <p

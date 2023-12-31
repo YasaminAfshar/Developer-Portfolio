@@ -116,7 +116,11 @@ const NavBar = () => {
             whileHover={{ y: -8 }}
             whileTap={{ scale: 0.8 }}
           >
-            <Image src={whatsappIcon} className="w-10 1xxl:w-14 ml-4" />
+            <Image
+              src={whatsappIcon}
+              alt="Whatsapp Icon"
+              className="w-10 1xxl:w-14 ml-4"
+            />
           </motion.a>
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -183,7 +187,11 @@ const NavBar = () => {
               whileHover={{ y: -8 }}
               whileTap={{ scale: 0.8 }}
             >
-              <Image src={whatsappIcon} className="w-10 3xsm:w-14 ml-4" />
+              <Image
+                src={whatsappIcon}
+                alt="Whatsapp Icon"
+                className="w-10 3xsm:w-14 ml-4"
+              />
             </motion.a>
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}

@@ -100,13 +100,13 @@ const About = () => {
                     <span className="font-bold">DATA MANAGEMENT</span>, I
                     constantly seek to improve my skills through practice and
                     constant updating. I believe that design is about more than
-                    just making things look pretty- it's about solving problems
+                    just making things look pretty- it is about solving problems
                     and creating intuitive, enjoyable experiences for users.
                   </p>
                   <p
                     className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl font-medium text-center indent-12 leading-relaxed mt-5 `}
                   >
-                    Whether I'm working on a website, mobile app, or other
+                    Whether I am working on a website, mobile app, or other
                     digital product, I bring my commitment to design excellence
                     and user-centered thinking to every project I work on. I
                     look forward to the opportunity to bring my skills and
