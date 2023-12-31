@@ -224,7 +224,7 @@ const Contact = () => {
               </motion.div>
 
               <motion.div
-                variants={slideIn("right", "tween", 0.2, 1)}
+                variants={slideIn("right", "tween", 0.2, 0.8)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"
