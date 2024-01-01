@@ -98,7 +98,7 @@ const Contact = () => {
             console.error(error);
 
             alert(
-              "Upss, It seems there was a problem!",
+              "Ups, It seems there was a problem!",
               "Something went wrong on our side, we ask you to resend your message or contact us by WhatsApp."
             );
             }
