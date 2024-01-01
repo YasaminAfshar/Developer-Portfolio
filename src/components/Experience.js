@@ -3,7 +3,7 @@ import { Space_Mono, Roboto, Mate_SC } from "next/font/google";
 import "animate.css";
 import Image from 'next/image';
 import Tilt from "react-vanilla-tilt";
-import { motion, useScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 import hotmart from "../../public/images/general/logo-hotmart.png"
 import Lilcon from '@/subComponents/Lilcon';
 
@@ -16,12 +16,12 @@ const Details = ({position, company, companyLink, companyImage, time, address, w
         ref={ref}
         className="my-8 first:mt-0 last:mb-0 w-full 1md:w-[80%] mx-auto flex flex-col items-center justify-between"
       >
-        <Lilcon reference={ref} />
+        <Lilcon reference={ref}/>
         <motion.div
           initial={{ y: 50 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1.5, type: "spring" }}
-          className="flex gap-10 ml-28 items-center"
+          className="flex gap-10 ml-0 sm:ml-28 items-center"
         >
           <MotionImage
             src={companyImage}
@@ -118,24 +118,16 @@ const mate = Mate_SC({
 });
 
 const Experience = () => {
-    const ref = useRef(null);
-    const {scrollYProgress} = useScroll(
-        {
-            target: ref,
-            offset: ["start end", "center start"]
-        }
-    )
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center mt-10 mb-20">
       <h2
-        className={`${space.variable} font-space font-extrabold text-black dark:text-light text-5xl text-center p-5 mx-auto mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+        className={`${space.variable} font-space font-extrabold text-black dark:text-light text-4xl xsm:text-5xl text-center p-5 mx-auto mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
       >
         EXPERIENCE
       </h2>
-      <div ref={ref} className="w-full 2md:w-[90%] 1xl:w-[75%] mx-auto relative">
-        <motion.div
-          style={{ scaleY: scrollYProgress }}
-          className="absolute left-[2.2rem] 1md:left-[3.4rem] top-1 w-[4px] 1md:w-[6px] h-full bg-dark origin-top dark:bg-light"
+      <div className="w-full 2md:w-[90%] 1xl:w-[75%] mx-auto relative">
+        <div
+          className="hidden sm:inline-block absolute left-[1rem] sm:left-[2.2rem] 1md:left-[3.4rem] top-1 w-[4px] 1md:w-[6px] h-full bg-dark origin-top dark:bg-light"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-0 3sm:ml-4">
           <Details

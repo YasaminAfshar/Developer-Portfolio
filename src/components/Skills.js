@@ -24,7 +24,7 @@ const Skills = () => {
     <>
       <div className="w-full h-auto mt-20 mb-20 pb-32">
         <h2
-          className={`${space.variable} font-space font-extrabold text-black dark:text-light text-5xl text-center p-5 mx-auto mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+          className={`${space.variable} font-space font-extrabold text-black dark:text-light text-4xl sm:text-5xl text-center p-5 mx-auto mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
         >
           My Skills
         </h2>

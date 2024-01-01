@@ -74,11 +74,11 @@ const About = () => {
           content="Right now, you are on the ABOUT PAGE where you will find a description of my knowledge and experiences in the field of programming, digital marketing and data entry."
         />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center text-black dark:text-light">
         <Layout className="pt-16 pb-20 overflow-hidden">
           <h1
-            className={`${rowdies.variable} font-rowdies w-auto mx-auto pb-6 text-5xl sm:text-7xl 3lg:text-8xl text-center font-medium tracking-wider cursor-default overflow-hidden titleShadow animate__animated animate__fadeInDown animate__slower animate__delay-1s`}
+            className={`${rowdies.variable} font-rowdies w-auto mx-auto pb-6 text-4xl sm:text-7xl 3lg:text-8xl text-center font-medium tracking-wider cursor-default overflow-hidden titleShadow animate__animated animate__fadeInDown animate__slower animate__delay-1s`}
           >
             Passion Fuels Purpose!
           </h1>
@@ -87,12 +87,12 @@ const About = () => {
               <div className="mx-auto w-full h-full flex flex-col xxl:flex-row gap-16 xxl:gap-8 justify-between items-center">
                 <div className="w-[95%] 1xl:w-auto h-auto mx-auto">
                   <h3
-                    className={`${space.variable} font-space font-extrabold text-4xl text-center p-5 underline underline-offset-4 mx-auto mb-16 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+                    className={`${space.variable} font-space font-extrabold text-2xl 2xsm:text-4xl text-center p-5 underline underline-offset-4 mx-auto mb-16 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
                   >
                     What About Me?
                   </h3>
                   <p
-                    className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl font-medium text-center indent-12 leading-relaxed mt-5 `}
+                    className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl font-medium text-center indent-0 xxl:indent-12 leading-relaxed mt-5 `}
                   >
                     As a <span className="font-bold">FULL STACK DEVELOPER</span>{" "}
                     with experience in{" "}
@@ -104,7 +104,7 @@ const About = () => {
                     and creating intuitive, enjoyable experiences for users.
                   </p>
                   <p
-                    className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl font-medium text-center indent-12 leading-relaxed mt-5 `}
+                    className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl font-medium text-center indent-0 xxl:indent-12 leading-relaxed mt-5 `}
                   >
                     Whether I am working on a website, mobile app, or other
                     digital product, I bring my commitment to design excellence
@@ -113,7 +113,7 @@ const About = () => {
                     passion to your next project.
                   </p>
                   <p
-                    className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl font-medium text-center indent-12 leading-relaxed mt-5 `}
+                    className={`${roboto.variable} font-roboto text-base 2sm:text-lg 3xl:text-xl font-medium text-center indent-0 xxl:indent-12 leading-relaxed mt-5 `}
                   >
                     My main goal is to provide exceptional customer service,
                     exceeding their expectations in a world where technology
@@ -126,7 +126,7 @@ const About = () => {
                   <Image
                     src={profileImage}
                     alt="Profile image of Yasmin Afsharinejad"
-                    className="w-[85%] 2sm:w-[60%] 2md:w-[45%] xxl:w-[85%] mx-auto h-auto rounded-2xl border-2 border-solid border-dark bg-dark dark:bg-light p-4"
+                    className="w-full 2xsm:w-[70%] 2md:w-[45%] xxl:w-[85%] mx-auto h-auto rounded-2xl border-2 border-solid border-dark bg-dark dark:bg-light p-4"
                     priority
                   />
                 </div>
@@ -134,31 +134,31 @@ const About = () => {
               <div className="w-full h-auto mx-auto flex flex-col justify-center mt-32">
                 <div className="w-3/5 1md:w-[90%] flex flex-col 1md:flex-row justify-evenly gap-12 1md:gap-8 mx-auto mb-20 py-10 1md:py-8 rounded-lg counter text-center shadow-2xl shadow-black dark:shadow-white text-black ">
                   <div className="w-auto flex flex-col justify-center items-center px-4">
-                    <span className="inline-block text-black text-6xl 3xl:text-7xl font-bold">
+                    <span className="inline-block text-black text-5xl 3xl:text-7xl font-bold">
                       <AnimatedNumbers value={1} />+
                     </span>
                     <h2
-                      className={`${cinzel.variable} font-cinzel text-2xl 3xl:text-3xl font-bold pt-3`}
+                      className={`${cinzel.variable} font-cinzel text-xl 3xl:text-3xl font-bold pt-3`}
                     >
                       Satisfied clients
                     </h2>
                   </div>
                   <div className="w-auto flex flex-col justify-center items-center px-4">
-                    <span className="inline-block text-6xl  3xl:text-7xl  font-bold">
+                    <span className="inline-block text-5xl  3xl:text-7xl  font-bold">
                       <AnimatedNumbers value={1} />+
                     </span>
                     <h2
-                      className={`${cinzel.variable} font-cinzel text-2xl 3xl:text-3xl font-bold pt-3`}
+                      className={`${cinzel.variable} font-cinzel text-xl 3xl:text-3xl font-bold pt-3`}
                     >
                       Projects Completed
                     </h2>
                   </div>
                   <div className="w-auto flex flex-col justify-center items-center px-4">
-                    <span className="inline-block text-6xl  3xl:text-7xl  font-bold">
+                    <span className="inline-block text-5xl  3xl:text-7xl  font-bold">
                       <AnimatedNumbers value={4} />+
                     </span>
                     <h2
-                      className={`${cinzel.variable} font-cinzel text-2xl 3xl:text-3xl font-bold pt-3`}
+                      className={`${cinzel.variable} font-cinzel text-xl 3xl:text-3xl font-bold pt-3`}
                     >
                       Months of Experience
                     </h2>

@@ -138,11 +138,11 @@ const Contact = () => {
           <Layout className="pt-16 pb-20 overflow-hidden">
             <div className="my-2 3sm:my-8 xl:my-16 flex xl:flex-row flex-col-reverse gap-10 text-black dark:text-light">
               <motion.div
-                variants={slideIn("left", "tween", 0.2, 1)}
+                variants={slideIn("left", "tween", 0.3, 1)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="flex-[0.8] p-10 rounded-2xl formColor"
+                className="flex-[0.8] p-6 sm:p-10 rounded-2xl formColor"
               >
                 <p
                   className={`${economica.variable} font-economica w-auto italic font-extrabold sm:text-3xl md:text-4xl text-2xl text-start tracking-wider cursor-default`}
@@ -224,7 +224,7 @@ const Contact = () => {
               </motion.div>
 
               <motion.div
-                variants={slideIn("right", "tween", 0.2, 0.8)}
+                variants={slideIn("right", "tween", 0.3, 1)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"

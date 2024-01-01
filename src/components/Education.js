@@ -4,7 +4,7 @@ import "animate.css";
 import Image from "next/image";
 import Tilt from "react-vanilla-tilt";
 import Lilcon from "@/subComponents/Lilcon";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import Slider from "react-slick";
 import { MdKeyboardDoubleArrowRight, MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import styled from "styled-components";
@@ -40,7 +40,7 @@ const Details = ({
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1.5, type: "spring" }}
-        className="flex gap-10 ml-28 items-center"
+        className="flex gap-10 ml-0 sm:ml-28 items-center"
       >
         <MotionImage
           src={logo}
@@ -133,18 +133,18 @@ const Buttons = styled.div`
 
   @media only screen and (max-width: 780px) {
     button {
-      width: 2.8rem;
-      height: 3.2rem;
+      width: 2.4rem;
+      height: 3rem;
     }
 
     .next {
-      right: -3rem;
-      font-size: 2.6rem;
+      right: -2rem;
+      font-size: 2.2rem;
     }
 
     .back {
-      left: -3rem;
-      font-size: 2.6rem;
+      left: -2rem;
+      font-size: 2.2rem;
     }
   }
 `; 
@@ -170,11 +170,6 @@ const mate = Mate_SC({
 });
 
 const Education = () => {
-    const ref = useRef(null);
-    const { scrollYProgress } = useScroll({
-      target: ref,
-      offset: ["start end", "center start"],
-    });
 
     const settings = {
       dots: false,
@@ -216,18 +211,12 @@ const Education = () => {
     <div className=" w-full h-auto flex flex-col justify-center items-center mt-32 mb-36">
       <div className="w-full h-auto flex flex-col justify-center items-center ">
         <h2
-          className={`${space.variable} font-space font-extrabold text-black dark:text-light text-5xl text-center p-5 mx-auto mt-10 mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
+          className={`${space.variable} font-space font-extrabold text-black dark:text-light text-4xl xsm:text-5xl text-center p-5 mx-auto mt-10 mb-20 underline underline-offset-4 animate__animated animate__pulse animate_slower animate__delay-2s animate__infinite overflow-hidden`}
         >
           EDUCATION
         </h2>
-        <div
-          ref={ref}
-          className="w-full 2md:w-[90%] 1xl:w-[75%] mx-auto relative"
-        >
-          <motion.div
-            style={{ scaleY: scrollYProgress }}
-            className="absolute left-[2.2rem] 1md:left-[3.4rem] top-1 w-[4px] 1md:w-[6px] h-full bg-dark origin-top dark:bg-light"
-          />
+        <div className="w-full 2md:w-[90%] 1xl:w-[75%] mx-auto relative">
+          <div className="hidden sm:inline-block absolute left-[1rem] sm:left-[2.2rem] 1md:left-[3.4rem] top-1 w-[4px] 1md:w-[6px] h-full bg-dark origin-top dark:bg-light" />
           <ul className="w-full flex flex-col items-start justify-between ml-0 3sm:ml-4">
             <Details
               logo={coderhouse}

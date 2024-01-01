@@ -44,7 +44,7 @@ export default function Home() {
         />
       </Head>
       <TransitionEffect/>
-      <main className="flex items-center text-black w-full min-h-full dark:text-light">
+      <main className="flex items-center text-black w-full min-h-full dark:text-light overflow-hidden">
         <Layout className="pt-10 pb-20">
           <div className="flex flex-col 1lg:flex-row justify-center 1lg:justify-between items-center w-full pb-10 1xl:pb-0">
             <div className="1lg:w-1/2 h-auto overflow-hidden animate__animated animate__pulse animate__infinite	animate__slow">

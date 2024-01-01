@@ -7,7 +7,7 @@ const Lilcon = ({reference}) => {
       offset: ["center end", "center center"],
     });
   return (
-    <figure className="absolute -left-2 1md:left-0 stroke-dark dark:stroke-light">
+    <figure className="hidden sm:inline-block absolute -left-7 sm:-left-2 1md:left-0 stroke-dark dark:stroke-light">
       <svg
         className="-rotate-90 w-[90px] 1md:w-[115px] h-[90px] 1md:h-[115px]"
         width="115"
