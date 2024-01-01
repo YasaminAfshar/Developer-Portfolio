@@ -16,7 +16,7 @@ const Cube = () => {
 
       const handleResize = () => {
         if (window.innerWidth <= 699) {
-          setCanvasSize({ width: "24rem", height: "20rem" }); 
+          setCanvasSize({ width: "22rem", height: "18rem" }); 
         } else {
           setCanvasSize({ width: "16rem", height: "14rem" });
         }

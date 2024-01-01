@@ -57,7 +57,7 @@ export default function Home() {
             </div>
             <div className="relative w-full 1lg:w-1/2 h-auto flex flex-col items-center pt-10">
               <motion.p
-                className={`${special.variable} font-special w-auto text-xl 2xsm:text-3xl banner py-2 px-4 mb-10 tracking-wider text-center font-bold rounded-md mx-auto overflow-hidden cursor-default`}
+                className={`${special.variable} font-special w-auto text-lg 2xsm:text-3xl banner py-2 px-4 mb-10 tracking-wider text-center font-bold rounded-md mx-auto overflow-hidden cursor-default`}
                 whileHover={{ scale: [null, 1.2, 1.1] }}
                 transition={{ duration: 0.2 }}
               >
@@ -66,11 +66,11 @@ export default function Home() {
               <h1
                 className={`${special.variable} font-special w-auto text-3xl 2xsm:text-4xl 2sm:text-5xl 3sm:text-6xl 1lg:text-4xl 4lg:text-5xl 3xl:text-6xl text-center font-bold pt-2 my-2 px-2 mx-auto cursor-default overflow-hidden titleShadow`}
               >
-                I am Yasmin Afsharinejad
+                I am Yasmin A.
               </h1>
               <TypewriterText />
               <p
-                className={`${unna.variable} font-unna text-center text-xl 5lg:text-2xl font-medium py-2 mx-auto my-8 cursor-default overflow-hidden `}
+                className={`${unna.variable} font-unna text-center text-lg 5lg:text-2xl font-medium py-2 mx-auto my-8 cursor-default overflow-hidden `}
               >
                 I offer a strong guarantee of reliable and high-quality
                 services, ensuring that your projects are executed with
