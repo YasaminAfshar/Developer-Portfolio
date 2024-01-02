@@ -36,12 +36,12 @@ const Cube = () => {
     }
 
    const textureLoader = new TextureLoader();
-   const texture_1 = textureLoader.load("/images/cube/computer.jpg");
-   const texture_2 = textureLoader.load("/images/cube/dataEntry.jpg");
-   const texture_3 = textureLoader.load("/images/cube/marketing.jpg");
-   const texture_4 = textureLoader.load("/images/cube/online-marketing.jpg");
-   const texture_5 = textureLoader.load("/images/cube/virtual.jpg");
-   const texture_6 = textureLoader.load("/images/cube/web.jpg");
+   const texture_1 = textureLoader.load("/images/cube/computer.webp");
+   const texture_2 = textureLoader.load("/images/cube/dataEntry.webp");
+   const texture_3 = textureLoader.load("/images/cube/marketing.webp");
+   const texture_4 = textureLoader.load("/images/cube/online-marketing.webp");
+   const texture_5 = textureLoader.load("/images/cube/virtual.webp");
+   const texture_6 = textureLoader.load("/images/cube/web.webp");
 
     return (
       <div className="inline-block 2sm:absolute mt-10 3xsm:mt-0 right-0 1md:-right-14 5lg:right-0 bottom-0 3xsm:-bottom-24 1md:-bottom-28 w-auto h-auto">

@@ -10,16 +10,16 @@ import { MdKeyboardDoubleArrowRight, MdKeyboardDoubleArrowLeft } from "react-ico
 import styled from "styled-components";
 
 /* --------------------------------- ICONOS --------------------------------- */
-import coderhouse from "../../public/images/general/coderhouse.png";
-import hotmart from "../../public/images/general/logo-hotmart.png";
+import coderhouse from "../../public/images/general/coderhouse.webp";
+import hotmart from "../../public/images/general/logo-hotmart.webp";
 
 /* ------------------------ IMAGENES DE CERTIFICADOS ------------------------ */
-import frontend from "../../public/images/certificates/certificado-desarrolloweb.png";
-import backend from "../../public/images/certificates/certificado-Backend.png";
-import react from "../../public/images/certificates/certificado-reactjs.png";
-import javascript from "../../public/images/certificates/certificado-javascript.png";
-import fullStack from "../../public/images/certificates/certificado-Desarrollo-Full-Stack.png";
-import marketing from "../../public/images/certificates/certificado-marketing-digital.jpg";
+import frontend from "../../public/images/certificates/certificado-desarrolloweb.webp";
+import backend from "../../public/images/certificates/certificado-Backend.webp";
+import react from "../../public/images/certificates/certificado-reactjs.webp";
+import javascript from "../../public/images/certificates/certificado-javascript.webp";
+import fullStack from "../../public/images/certificates/certificado-Desarrollo-Full-Stack.webp";
+import marketing from "../../public/images/certificates/certificado-marketing-digital.webp";
 
 
 
@@ -31,11 +31,8 @@ const Details = ({
 }) => {
   const ref = useRef(null);
   return (
-    <li
-      ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-full 1md:w-[80%] mx-auto flex flex-col items-center justify-between"
-    >
-      <Lilcon reference={ref} />
+    <li className="my-8 first:mt-0 last:mb-0 w-full 1md:w-[80%] mx-auto flex flex-col items-center justify-between">
+      <Lilcon reference={ref}/>
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
@@ -46,7 +43,6 @@ const Details = ({
           src={logo}
           alt={place}
           className="w-20  mr-4 hidden 2lg:inline-block"
-          floated={false}
           animate={{
             scale: [1, 1.35, 1],
             rotate: [0, 360, 0],
@@ -83,7 +79,6 @@ const Details = ({
                 src={logo}
                 alt={place}
                 className="w-16 my-6 inline-block 2lg:hidden"
-                floated={false}
                 animate={{
                   scale: [1, 1.35, 1],
                   rotate: [0, 360, 0],

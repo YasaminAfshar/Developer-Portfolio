@@ -4,7 +4,7 @@ import "animate.css";
 import Image from 'next/image';
 import Tilt from "react-vanilla-tilt";
 import { motion } from 'framer-motion';
-import hotmart from "../../public/images/general/logo-hotmart.png"
+import hotmart from "../../public/images/general/logo-hotmart.webp"
 import Lilcon from '@/subComponents/Lilcon';
 
 const MotionImage = motion(Image)
@@ -12,10 +12,7 @@ const MotionImage = motion(Image)
 const Details = ({position, company, companyLink, companyImage, time, address, work}) => {
     const ref = useRef(null);
     return (
-      <li
-        ref={ref}
-        className="my-8 first:mt-0 last:mb-0 w-full 1md:w-[80%] mx-auto flex flex-col items-center justify-between"
-      >
+      <li className="my-8 first:mt-0 last:mb-0 w-full 1md:w-[80%] mx-auto flex flex-col items-center justify-between">
         <Lilcon reference={ref}/>
         <motion.div
           initial={{ y: 50 }}
@@ -27,7 +24,6 @@ const Details = ({position, company, companyLink, companyImage, time, address, w
             src={companyImage}
             alt={company}
             className="w-20 mr-4 hidden 2lg:inline-block"
-            floated={false}
             animate={{
               scale: [1, 1.35, 1],
               rotate: [0, 360, 0],
@@ -71,7 +67,6 @@ const Details = ({position, company, companyLink, companyImage, time, address, w
                   src={companyImage}
                   alt={company}
                   className="w-16 my-6 inline-block 2lg:hidden"
-                  floated={false}
                   animate={{
                     scale: [1, 1.35, 1],
                     rotate: [0, 360, 0],

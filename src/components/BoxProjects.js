@@ -114,7 +114,6 @@ export const FirstProjects = ({
             href={github}
             target="_blank"
             className="w-14 mx-8"
-            floated={false}
             animate={{
               scale: [1, 1.35, 1],
               rotate: [0, 360, 0],
@@ -225,7 +224,6 @@ export const SecondProjects = ({
             href={github}
             target="_blank"
             className="w-14 mx-8"
-            floated={false}
             animate={{
               scale: [1, 1.35, 1],
               rotate: [0, 360, 0],
@@ -338,7 +336,6 @@ export const ThirdProjects = ({
             href={googleSheet}
             target="_blank"
             className="mx-8"
-            floated={false}
             animate={{
               scale: [1, 1.35, 1],
               rotate: [0, 360, 0],
@@ -441,7 +438,6 @@ export const FourthProjects = ({ type, title, summary, img1, img2, img3, link, g
             href={googleSheet}
             target="_blank"
             className="mx-8"
-            floated={false}
             animate={{
               scale: [1, 1.35, 1],
               rotate: [0, 360, 0],

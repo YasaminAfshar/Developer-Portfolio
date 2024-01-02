@@ -11,11 +11,12 @@ import {
 import { motion } from "framer-motion";
 import Tilt from "react-vanilla-tilt";
 import { Merienda, Space_Mono } from "next/font/google";
-import developer from "../../public/images/general/developer.png";
-import data from "../../public/images/general/data.png";
-import virtual from "../../public/images/general/assistant.png";
-import marketing from "../../public/images/general/marketing.png";
-import creator from "../../public/images/general/creator.png"
+
+import developer from "../../public/images/general/developer.webp";
+import data from "../../public/images/general/data.webp";
+import virtual from "../../public/images/general/assistant.webp";
+import marketing from "../../public/images/general/marketing.webp";
+import creator from "../../public/images/general/creator.webp"
 
 const MotionCardHeader = motion(CardHeader)
 
@@ -47,7 +48,6 @@ const ServiceCard = () => {
         <Tilt className="tilt">
           <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
             <MotionCardHeader
-              floated={false}
               className="h-auto my-5"
               animate={{
                 scale: [1, 1.5, 1.5, 1, 1],
@@ -98,7 +98,6 @@ const ServiceCard = () => {
         <Tilt className="tilt">
           <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
             <MotionCardHeader
-              floated={false}
               className="h-auto my-5"
               animate={{
                 scale: [1, 1.5, 1.5, 1, 1],
@@ -146,7 +145,6 @@ const ServiceCard = () => {
         <Tilt className="tilt">
           <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
             <MotionCardHeader
-              floated={false}
               className="h-auto my-5"
               animate={{
                 scale: [1, 1.5, 1.5, 1, 1],
@@ -193,7 +191,6 @@ const ServiceCard = () => {
         <Tilt className="tilt">
           <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
             <MotionCardHeader
-              floated={false}
               className="h-auto my-5"
               animate={{
                 scale: [1, 1.5, 1.5, 1, 1],
@@ -240,7 +237,6 @@ const ServiceCard = () => {
         <Tilt className="tilt">
           <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
             <MotionCardHeader
-              floated={false}
               className="h-auto my-5"
               animate={{
                 scale: [1, 1.5, 1.5, 1, 1],
