@@ -43,9 +43,9 @@ const BallCanvas = ({ icon }) => {
       frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
-      style={{width: "9rem", height: "9rem"}}
+      style={{ width: "9rem", height: "9rem" }}
     >
-      <Suspense>
+      <Suspense fallback={null}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={imageUrl} />
       </Suspense>
