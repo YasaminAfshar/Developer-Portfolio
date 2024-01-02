@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image';
 import {motion} from "framer-motion";
-import powerOff from "../../public/images/svgs/power-off.svg"
 
 const MotionLink = motion(Link);
 
@@ -31,11 +29,9 @@ const Logo = () => {
           borderRadius: "100%",
         }}
       >
-        <Image
+        <img
           className="w-8 1md:w-11"
-          width={8}
-          height={8}
-          src={powerOff}
+          src="/images/svgs/power-off.svg"
           alt="Button with direct access to Home Page"
         />
       </MotionLink>

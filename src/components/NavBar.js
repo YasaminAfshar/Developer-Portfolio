@@ -148,7 +148,8 @@ const NavBar = () => {
         <motion.div
           className="min-w-[80vw] 1md:min-w-[70vw] flex 4lg:hidden flex-col justify-between items-center fixed z-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-20"
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
-          animate={{ scale: 1, opacity: 1, duration: 2, ease: "easeInOut" }}
+          animate={{scale: 1, opacity: 1}}
+          transition={{ duration: 1, ease: "easeInOut" }}
         >
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink href="/" title="HOME" toggle={handleClick} />
@@ -219,7 +220,7 @@ const NavBar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute flex items-center gap-0 1md:gap-8 left-[28%] sm:left-[36%] 2xsm:left-[40%] 1lg:left-[50%] top-6 translate-x-[5%]">
+      <div className="absolute flex items-center gap-0 1md:gap-8  left-[28%] xlsm:left-[32%] sm:left-[36%] 2xsm:left-[40%] 1lg:left-[50%] top-6 translate-x-[5%]">
         <Logo />
         <SoundBar />
       </div>

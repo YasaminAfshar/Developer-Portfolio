@@ -12,6 +12,12 @@ import {
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
+   React.useEffect(() => {
+     return () => {
+       decal.dispose();
+     };
+   }, [decal]);
+
   return (
     <Float speed={1.75} rotationIntensity={1.2} floatIntensity={1.5}>
       <ambientLight intensity={0.7} />
