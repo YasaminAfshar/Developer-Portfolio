@@ -15,10 +15,10 @@ const Details = ({position, company, companyLink, companyImage, time, address, w
       <li className="my-8 first:mt-0 last:mb-0 w-full 1md:w-[80%] mx-auto flex flex-col items-center justify-between">
         <Lilcon />
         <motion.div
-          initial={{ y: 150 }}
-          whileInView={{ y: 0 }}
-          transition={{ duration: 2, type: "spring", bounce: 0.8 }}
-          className="flex gap-10 ml-0 sm:ml-28 items-center"
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.3 }}
+          className="flex gap-10 ml-0 sm:ml-28 items-center "
         >
           <MotionImage
             src={companyImage}
