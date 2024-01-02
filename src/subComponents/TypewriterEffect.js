@@ -11,7 +11,7 @@ const space = Space_Mono({
 
 const TypewriterText = () => {
   return (
-    <h3
+    <h1
       className={`${space.variable} font-space text-black dark:text-light text-xl 2xsm:text-3xl text-center font-extrabold pt-2 my-2 mx-auto cursor-default overflow-hidden textShadow`}
     >
       <Typewriter
@@ -39,7 +39,7 @@ const TypewriterText = () => {
             .start();
         }}
       />
-    </h3>
+    </h1>
   );
 };
 
