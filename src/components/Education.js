@@ -295,10 +295,18 @@ const Education = () => {
           </div>
         </Slider>
         <Buttons>
-          <button onClick={() => arrowRef.current.slickPrev()} className="back">
+          <button
+            onClick={() => arrowRef.current.slickPrev()}
+            className="back"
+            aria-label="Prev Button"
+          >
             <MdKeyboardDoubleArrowLeft />
           </button>
-          <button onClick={() => arrowRef.current.slickNext()} className="next">
+          <button
+            onClick={() => arrowRef.current.slickNext()}
+            className="next"
+            aria-label="Next Button"
+          >
             <MdKeyboardDoubleArrowRight />
           </button>
         </Buttons>

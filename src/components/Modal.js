@@ -20,6 +20,7 @@ const Modal = ({ isOpen, onClose, title, message }) => {
                   <button
                     onClick={onClose}
                     className="py-3 px-6 bg-black rounded-full text-white sm:text-lg sm:w-full tracking-wider font-semibold"
+                    aria-label="Close Button"
                   >
                     Close notification
                   </button>

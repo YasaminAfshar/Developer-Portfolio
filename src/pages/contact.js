@@ -133,7 +133,7 @@ const Contact = () => {
             content="Right now, you are on the CONTACT PAGE where you can send me a question or request an interview."
           />
         </Head>
-        <TransitionEffect/>
+        <TransitionEffect />
         <main className="flex w-full flex-col items-center justify-center">
           <Layout className="pt-16 pb-20 overflow-hidden">
             <div className="my-2 3sm:my-8 xl:my-16 flex xl:flex-row flex-col-reverse gap-10 text-black dark:text-light">
@@ -214,6 +214,7 @@ const Contact = () => {
                       variant="filled"
                       ripple={true}
                       type="submit"
+                      aria-label="Send Message Button"
                       className={`${mate.variable} font-mate inline-block py-3 px-8 rounded-xl outline-none w-[190px] bg-black dark:bg-light text-white dark:text-black text-xl tracking-wider font-bold`}
                     >
                       {loading ? "Sending..." : "Send"}

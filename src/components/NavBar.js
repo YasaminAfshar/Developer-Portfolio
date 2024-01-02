@@ -41,6 +41,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       href={href}
       className={`${className} relative group text-light dark:text-black my-3`}
       onClick={handleClick}
+      aria-label="Mobile pages Button"
     >
       {title}
       <span
@@ -68,6 +69,7 @@ const NavBar = () => {
       <button
         className="flex 4lg:hidden flex-col justify-center items-center p-2 "
         onClick={handleClick}
+        aria-label="Pages Button"
       >
         <span
           className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-1.5 w-10 rounded-sm  ${
@@ -99,6 +101,7 @@ const NavBar = () => {
             className="w-10 1xxl:w-14 mr-4"
             whileHover={{ y: -8 }}
             whileTap={{ scale: 0.8 }}
+            aria-label="Github Button"
           >
             <GithubIcon />
           </MotionLink>
@@ -108,6 +111,7 @@ const NavBar = () => {
             className="w-10 1xxl:w-14 mx-4"
             whileHover={{ y: -8 }}
             whileTap={{ scale: 0.8 }}
+            aria-label="Linkedin Button"
           >
             <LinkedInIcon />
           </MotionLink>
@@ -116,6 +120,7 @@ const NavBar = () => {
             target={"_blank"}
             whileHover={{ y: -8 }}
             whileTap={{ scale: 0.8 }}
+            aria-label="Whatsapp Button"
           >
             <Image
               src={whatsappIcon}
@@ -124,6 +129,7 @@ const NavBar = () => {
             />
           </MotionLink>
           <button
+            aria-label="Switch Button Theme"
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`ml-6 w-12 1xxl:w-16 flex items-center justify-center rounded-full p-1 ${
               mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
@@ -163,41 +169,45 @@ const NavBar = () => {
             />
           </nav>
           <nav className="flex items-center gap-6 xsm:gap-10 justify-center flex-wrap mt-14 3xsm:mt-10">
-            <motion.a
+            <MotionLink
               href="https://github.com/YasaminAfshar"
               target={"_blank"}
               className="w-10 3xsm:w-14 bg-light rounded-full dark:bg-dark"
               whileHover={{ y: -8 }}
               whileTap={{ scale: 0.8 }}
+              aria-label="Github Button"
             >
               <GithubIcon />
-            </motion.a>
-            <motion.a
+            </MotionLink>
+            <MotionLink
               href="https://www.linkedin.com/in/yasmin-afsharinejad-0826921a2/"
               target={"_blank"}
               className="w-10 3xsm:w-14"
               whileHover={{ y: -8 }}
               whileTap={{ scale: 0.8 }}
+              aria-label=" Linkedin Button"
             >
               <LinkedInIcon />
-            </motion.a>
-            <motion.a
+            </MotionLink>
+            <MotionLink
               href="https://wa.link/7apkc8"
               target={"_blank"}
               whileHover={{ y: -8 }}
               whileTap={{ scale: 0.8 }}
+              aria-label="Whatsapp Button"
             >
               <Image
                 src={whatsappIcon}
                 alt="Whatsapp Icon"
                 className="w-10 3xsm:w-14 ml-4"
               />
-            </motion.a>
+            </MotionLink>
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
               className={`w-10 3xsm:w-16 flex items-center justify-center rounded-full p-1 ${
                 mode === "light" ? "bg-black text-light" : "bg-white text-dark"
               }`}
+              aria-label="Switch Button Theme"
             >
               {mode === "dark" ? (
                 <SunIcon className={"fill-dark"} />

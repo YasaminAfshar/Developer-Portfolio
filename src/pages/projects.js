@@ -64,7 +64,7 @@ const Projects = () => {
           content="Right now, you are on the PROJECTS PAGE where you will be able to visualize all the projects that I have been doing to date."
         />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16 pb-20 overflow-hidden">
           <h1
@@ -80,6 +80,7 @@ const Projects = () => {
               onClick={() => handleCategoryChange("Websites")}
               className="p-4 outlined-none rounded-full bg-gradient-to-r from-pink-300 to-purple-600 hover:text-white hover:from-pink-600 hover:to-purple-300 hover:drop-shadow-2xl"
               whileTap={{ scale: 0.85 }}
+              aria-label="Access to Website Projects "
             >
               Websites
             </motion.button>
@@ -87,6 +88,7 @@ const Projects = () => {
               onClick={() => handleCategoryChange("Backend")}
               className="p-4 outlined-none rounded-full bg-gradient-to-r from-pink-300 to-purple-600 hover:text-white hover:from-pink-600 hover:to-purple-300 hover:drop-shadow-2xl"
               whileTap={{ scale: 0.85 }}
+              aria-label="Access to Backend Projects "
             >
               Backend
             </motion.button>
@@ -94,6 +96,7 @@ const Projects = () => {
               onClick={() => handleCategoryChange("Data Entry")}
               className="p-4 outlined-none rounded-full bg-gradient-to-r from-pink-300 to-purple-600 hover:text-white hover:from-pink-600 hover:to-purple-300 hover:drop-shadow-2xl"
               whileTap={{ scale: 0.85 }}
+              aria-label="Access to Data Projects "
             >
               Data Entry
             </motion.button>
