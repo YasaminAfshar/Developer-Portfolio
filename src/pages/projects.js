@@ -11,11 +11,11 @@ import { useRouter } from "next/router";
 
 /* -------------------------------- IMAGENES -------------------------------- */
 
-import image1A from "../../public/images/projects/image-1-A.jpg"
-import image1B from "../../public/images/projects/image-1-B.jpg"
-import image1C from "../../public/images/projects/image-1-C.jpg" 
+import image1A from "../../public/images/projects/image-1-A.webp"
+import image1B from "../../public/images/projects/image-1-B.webp"
+import image1C from "../../public/images/projects/image-1-C.webp" 
 
-import gifted from "../../public/images/general/gifted.png"
+import gifted from "../../public/images/general/gifted.webp"
 import TransitionEffect from "@/components/hooks/TransitionEffect";
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
