@@ -31,6 +31,8 @@ const Logo = () => {
       >
         <img
           className="w-8 1md:w-11"
+          width={8}
+          height={8}
           src="/images/svgs/power-off.svg"
           alt="Button with direct access to Home Page"
         />
