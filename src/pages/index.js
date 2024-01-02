@@ -8,7 +8,7 @@ import HireMe from "@/subComponents/HireMe";
 import TypewriterText from "@/subComponents/TypewriterEffect";
 import { LinkArrow } from "@/subComponents/Icons";
 import { Special_Elite, Unna, Inconsolata } from "next/font/google";
-import portfileImg from "../../public/images/svgs/header-img.svg";
+import portfileImg from "../../public/images/general/header-img.webp";
 import Cube from "@/subComponents/Cube";
 import TransitionEffect from "@/components/hooks/TransitionEffect";
 

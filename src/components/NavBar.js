@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon} from "../subComponents/Icons";
@@ -8,8 +9,8 @@ import SoundBar from "@/subComponents/SoundBar";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
 import whatsappIcon from "../../public/images/svgs/whatsapp-icon.svg"
-import Image from "next/image";
 
+const MotionLink = motion(Link);
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -92,7 +93,7 @@ const NavBar = () => {
           <CustomLink href="/contact" title="CONTACT" className="ml-4" />
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
-          <motion.a
+          <MotionLink
             href="https://github.com/YasaminAfshar"
             target={"_blank"}
             className="w-10 1xxl:w-14 mr-4"
@@ -100,8 +101,8 @@ const NavBar = () => {
             whileTap={{ scale: 0.8 }}
           >
             <GithubIcon />
-          </motion.a>
-          <motion.a
+          </MotionLink>
+          <MotionLink
             href="https://www.linkedin.com/in/yasmin-afsharinejad-0826921a2/"
             target={"_blank"}
             className="w-10 1xxl:w-14 mx-4"
@@ -109,8 +110,8 @@ const NavBar = () => {
             whileTap={{ scale: 0.8 }}
           >
             <LinkedInIcon />
-          </motion.a>
-          <motion.a
+          </MotionLink>
+          <MotionLink
             href="https://wa.link/7apkc8"
             target={"_blank"}
             whileHover={{ y: -8 }}
@@ -121,7 +122,7 @@ const NavBar = () => {
               alt="Whatsapp Icon"
               className="w-10 1xxl:w-14 ml-4"
             />
-          </motion.a>
+          </MotionLink>
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`ml-6 w-12 1xxl:w-16 flex items-center justify-center rounded-full p-1 ${
