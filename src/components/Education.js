@@ -29,14 +29,14 @@ const MotionImage = motion(Image);
 const Details = ({
   type, time, place, info, logo
 }) => {
-  const ref = useRef(null);
+  
   return (
     <li className="my-8 first:mt-0 last:mb-0 w-full 1md:w-[80%] mx-auto flex flex-col items-center justify-between">
-      <Lilcon reference={ref}/>
+      <Lilcon />
       <motion.div
-        initial={{ y: 50 }}
+        initial={{ y: 150 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 1.5, type: "spring" }}
+        transition={{ duration: 2, type: "spring", bounce: 0.8 }}
         className="flex gap-10 ml-0 sm:ml-28 items-center"
       >
         <MotionImage

@@ -1,11 +1,7 @@
 import React from 'react'
-import { motion, useScroll } from "framer-motion";
 
-const Lilcon = ({reference}) => {
-    const { scrollYProgress } = useScroll({
-      target: reference,
-      offset: ["center end", "center center"],
-    });
+const Lilcon = () => {
+   
   return (
     <figure className="hidden sm:inline-block absolute -left-7 sm:-left-2 1md:left-0 stroke-dark dark:stroke-light">
       <svg
@@ -20,12 +16,11 @@ const Lilcon = ({reference}) => {
           r="22"
           className="stroke-primary dark:stroke-primaryDark stroke-2 fill-none"
         />
-        <motion.circle
+        <circle
           cx="75"
           cy="50"
           r="22"
           className="stroke-[4px] 1md:stroke-[6px] fill-light dark:fill-dark"
-          style={{ pathLength: scrollYProgress }}
         />
         <circle
           cx="75"

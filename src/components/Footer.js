@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Layout from './Layout'
 import Image from "next/image";
-import logo from '../../public/images/profile/logo.png'
+import logo from '../../public/images/profile/logo.webp'
 import { Abel } from "next/font/google";
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */

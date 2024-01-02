@@ -6,7 +6,7 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import "animate.css";
 import Layout from "@/components/Layout";
 import ServiceCard from "@/components/ServiceCard";
-import profileImage from "../../public/images/profile/perfil3.png";
+import profileImage from "../../public/images/profile/perfil3.webp";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";

@@ -6,7 +6,7 @@ import {
   CardBody,
   CardFooter,
   Typography,
-  Progress
+  Progress,
 } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import Tilt from "react-vanilla-tilt";
@@ -16,11 +16,9 @@ import developer from "../../public/images/general/developer.webp";
 import data from "../../public/images/general/data.webp";
 import virtual from "../../public/images/general/assistant.webp";
 import marketing from "../../public/images/general/marketing.webp";
-import creator from "../../public/images/general/creator.webp"
+import creator from "../../public/images/general/creator.webp";
 
-const MotionCardHeader = motion(CardHeader)
-
-/* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
+const MotionCardHeader = motion(CardHeader);
 
 const merienda = Merienda({
   weight: "900",
@@ -34,9 +32,35 @@ const space = Space_Mono({
   variable: "--font-space",
 });
 
+const serviceData = [
+  {
+    image: developer,
+    title: "Full-Stack Developer",
+    experience: 70,
+  },
+  {
+    image: creator,
+    title: "Website Creator",
+    experience: 75,
+  },
+  {
+    image: virtual,
+    title: "Virtual Assistant",
+    experience: 90,
+  },
+  {
+    image: data,
+    title: "Data Entry Work",
+    experience: 90,
+  },
+  {
+    image: marketing,
+    title: "Digital Marketing",
+    experience: 85,
+  },
+];
 
 const ServiceCard = () => {
-  
   return (
     <div className="mt-20">
       <h2
@@ -45,247 +69,59 @@ const ServiceCard = () => {
         What I Offer
       </h2>
       <div className="flex justify-center flex-wrap gap-6 my-20">
-        <Tilt className="tilt">
-          <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
-            <MotionCardHeader
-              className="h-auto my-5"
-              animate={{
-                scale: [1, 1.5, 1.5, 1, 1],
-                rotate: [0, 0, 180, 180, 0],
-                borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
-                repeatDelay: 3,
-              }}
-            >
-              <Image
-                src={developer}
-                alt="Services Card"
-                className="w-20 h-20"
-              />
-            </MotionCardHeader>
-            <CardBody className="text-center pt-6">
-              <Typography
-                variant="h3"
-                className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
+        {serviceData.map((service, index) => (
+          <Tilt key={index} className="tilt">
+            <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
+              <MotionCardHeader
+                className="h-auto my-5"
+                animate={{
+                  scale: [1, 1.5, 1.5, 1, 1],
+                  rotate: [0, 0, 180, 180, 0],
+                  borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+                }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  times: [0, 0.2, 0.5, 0.8, 1],
+                  repeat: Infinity,
+                  repeatDelay: 3,
+                }}
               >
-                Full-Stack <br />
-                Developer
-              </Typography>
-            </CardBody>
-            <CardFooter className="w-full pt-0">
-              <Typography
-                color="blue-gray"
-                variant="h6"
-                className="text-center text-black pb-4 text-lg"
-              >
-                70% Experience
-              </Typography>
-              <Progress
-                value={70}
-                size="lg"
-                color="deep-purple"
-                className="w-full border"
-              />
-            </CardFooter>
-          </Card>
-        </Tilt>
-
-        <Tilt className="tilt">
-          <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
-            <MotionCardHeader
-              className="h-auto my-5"
-              animate={{
-                scale: [1, 1.5, 1.5, 1, 1],
-                rotate: [0, 0, 180, 180, 0],
-                borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
-                repeatDelay: 3,
-              }}
-            >
-              <Image src={creator} alt="Services Card" className="w-20 h-20" />
-            </MotionCardHeader>
-            <CardBody className="text-center pt-6">
-              <Typography
-                variant="h3"
-                className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
-              >
-                Web
-                <br />
-                Creator
-              </Typography>
-            </CardBody>
-            <CardFooter className="w-full pt-0">
-              <Typography
-                color="blue-gray"
-                variant="h6"
-                className="text-center text-black pb-4 text-lg"
-              >
-                75% Experience
-              </Typography>
-              <Progress
-                value={75}
-                size="lg"
-                color="deep-purple"
-                className="w-full border"
-              />
-            </CardFooter>
-          </Card>
-        </Tilt>
-
-        <Tilt className="tilt">
-          <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
-            <MotionCardHeader
-              className="h-auto my-5"
-              animate={{
-                scale: [1, 1.5, 1.5, 1, 1],
-                rotate: [0, 0, 180, 180, 0],
-                borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
-                repeatDelay: 3,
-              }}
-            >
-              <Image src={virtual} alt="Services Card" className="w-20 h-20" />
-            </MotionCardHeader>
-            <CardBody className="text-center pt-6">
-              <Typography
-                variant="h3"
-                className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
-              >
-                Virtual <br />
-                Assistant
-              </Typography>
-            </CardBody>
-            <CardFooter className="w-full pt-0">
-              <Typography
-                color="blue-gray"
-                variant="h6"
-                className="text-center text-black pb-4 text-lg"
-              >
-                90% Experience
-              </Typography>
-              <Progress
-                value={90}
-                size="lg"
-                color="deep-purple"
-                className="w-full border"
-              />
-            </CardFooter>
-          </Card>
-        </Tilt>
-
-        <Tilt className="tilt">
-          <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
-            <MotionCardHeader
-              className="h-auto my-5"
-              animate={{
-                scale: [1, 1.5, 1.5, 1, 1],
-                rotate: [0, 0, 180, 180, 0],
-                borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
-                repeatDelay: 3,
-              }}
-            >
-              <Image src={data} alt="Services Card" className="w-20 h-20" />
-            </MotionCardHeader>
-            <CardBody className="text-center pt-6">
-              <Typography
-                variant="h3"
-                className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
-              >
-                Data Entry <br />
-                Work
-              </Typography>
-            </CardBody>
-            <CardFooter className="w-full pt-0">
-              <Typography
-                color="blue-gray"
-                variant="h6"
-                className="text-center text-black pb-4 text-lg"
-              >
-                90% Experience
-              </Typography>
-              <Progress
-                value={90}
-                size="lg"
-                color="deep-purple"
-                className="w-full border"
-              />
-            </CardFooter>
-          </Card>
-        </Tilt>
-
-        <Tilt className="tilt">
-          <Card className="w-58 h-auto flex justify-center items-center shadow-inner serviceCard">
-            <MotionCardHeader
-              className="h-auto my-5"
-              animate={{
-                scale: [1, 1.5, 1.5, 1, 1],
-                rotate: [0, 0, 180, 180, 0],
-                borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
-                repeatDelay: 3,
-              }}
-            >
-              <Image
-                src={marketing}
-                alt="Services Card"
-                className="w-20 h-20"
-              />
-            </MotionCardHeader>
-            <CardBody className="text-center pt-6">
-              <Typography
-                variant="h3"
-                className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
-              >
-                Digital <br />
-                Marketing
-              </Typography>
-            </CardBody>
-            <CardFooter className="w-full pt-0">
-              <Typography
-                color="blue-gray"
-                variant="h6"
-                className="text-center text-black pb-4 text-lg"
-              >
-                85% Experience
-              </Typography>
-              <Progress
-                value={85}
-                size="lg"
-                color="deep-purple"
-                className="w-full border"
-              />
-            </CardFooter>
-          </Card>
-        </Tilt>
+                <Image
+                  src={service.image}
+                  alt="Services Card"
+                  className="w-20 h-20"
+                />
+              </MotionCardHeader>
+              <CardBody className="text-center pt-6">
+                <Typography
+                  variant="h3"
+                  className={`${merienda.variable} font-merienda text-black font-extrabold text-2xl tracking-wider`}
+                >
+                  {service.title}
+                </Typography>
+              </CardBody>
+              <CardFooter className="w-full pt-0">
+                <Typography
+                  color="blue-gray"
+                  variant="h6"
+                  className="text-center text-black pb-4 text-lg"
+                >
+                  {`${service.experience}% Experience`}
+                </Typography>
+                <Progress
+                  value={service.experience}
+                  size="lg"
+                  color="deep-purple"
+                  className="w-full border"
+                />
+              </CardFooter>
+            </Card>
+          </Tilt>
+        ))}
       </div>
     </div>
   );
-}
+};
 
-export default ServiceCard
+export default ServiceCard;
