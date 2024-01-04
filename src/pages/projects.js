@@ -93,12 +93,12 @@ const Projects = () => {
               Backend
             </motion.button>
             <motion.button
-              onClick={() => handleCategoryChange("Data Entry")}
+              onClick={() => handleCategoryChange("Others")}
               className="p-4 outlined-none rounded-full bg-gradient-to-r from-pink-300 to-purple-600 hover:text-white hover:from-pink-600 hover:to-purple-300 hover:drop-shadow-2xl"
               whileTap={{ scale: 0.85 }}
               aria-label="Access to Data Projects "
             >
-              Data Entry
+              Others
             </motion.button>
           </div>
 
@@ -159,7 +159,7 @@ const Projects = () => {
               </>
             )}
 
-            {category === "Data Entry" && (
+            {category === "Others" && (
               <>
                 <motion.div
                   initial={{ opacity: 0, scale: 0 }}
