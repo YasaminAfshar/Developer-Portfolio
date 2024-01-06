@@ -17,16 +17,8 @@ const Technologies = [
     icon: "/images/icons/bootstrap.webp",
   },
   {
-    name: "CANVAS",
-    icon: "/images/icons/canva.webp",
-  },
-  {
     name: "FRAMER MOTION",
     icon: "/images/icons/framer.webp",
-  },
-  {
-    name: "GITHUB",
-    icon: "/images/icons/github.webp",
   },
   {
     name: "JAVASCRIPT",
@@ -39,10 +31,6 @@ const Technologies = [
   {
     name: "NEXT JS",
     icon: "/images/icons/nextjs.webp",
-  },
-  {
-    name: "NODE JS",
-    icon: "/images/icons/nodejs.webp",
   },
   {
     name: "REACT JS",
@@ -59,14 +47,6 @@ const Technologies = [
   {
     name: "THREE JS",
     icon: "/images/icons/threejs.webp",
-  },
-  {
-    name: "MICROSOFT OFFICE",
-    icon: "/images/icons/microsoft.webp",
-  },
-  {
-    name: "FIGMA",
-    icon: "/images/icons/figma.webp",
   },
   {
     name: "WORDPRESS",
