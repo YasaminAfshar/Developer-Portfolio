@@ -96,6 +96,12 @@ const Technologies = [
       url: "https://res.cloudinary.com/dsrdpgpzy/image/upload/v1704166622/Portfolio/icons/figma_jvmn7g.webp",
     },
   },
+  {
+    name: "WORDPRESS",
+    icon: {
+      url: "https://res.cloudinary.com/dsrdpgpzy/image/upload/v1704571626/Portfolio/icons/wordpress_uwcrk7.webp",
+    },
+  },
 ];
 
 export default Technologies;
