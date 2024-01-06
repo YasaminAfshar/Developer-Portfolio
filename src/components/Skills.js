@@ -1,8 +1,78 @@
 import React from 'react'
 import "animate.css";
 import { Space_Mono, Saira_Condensed} from "next/font/google";
-import Technologies from "@/subComponents/Technologies";
 import BallCanvas from '@/subComponents/Ball';
+
+const Technologies = [
+  {
+    name: "HTML 5",
+    icon: "/images/icons/html.webp",
+  },
+  {
+    name: "CSS 3",
+    icon: "/images/icons/css.webp",
+  },
+  {
+    name: "BOOTSTRAP",
+    icon: "/images/icons/bootstrap.webp",
+  },
+  {
+    name: "CANVAS",
+    icon: "/images/icons/canva.webp",
+  },
+  {
+    name: "FRAMER MOTION",
+    icon: "/images/icons/framer.webp",
+  },
+  {
+    name: "GITHUB",
+    icon: "/images/icons/github.webp",
+  },
+  {
+    name: "JAVASCRIPT",
+    icon: "/images/icons/javascript.webp",
+  },
+  {
+    name: "MONGO DB",
+    icon: "/images/icons/mongodb.webp",
+  },
+  {
+    name: "NEXT JS",
+    icon: "/images/icons/nextjs.webp",
+  },
+  {
+    name: "NODE JS",
+    icon: "/images/icons/nodejs.webp",
+  },
+  {
+    name: "REACT JS",
+    icon: "/images/icons/reactjs.webp",
+  },
+  {
+    name: "SASS",
+    icon: "/images/icons/sass.webp",
+  },
+  {
+    name: "TAILWIND CSS",
+    icon: "/images/icons/tailwindcss.webp",
+  },
+  {
+    name: "THREE JS",
+    icon: "/images/icons/threejs.webp",
+  },
+  {
+    name: "MICROSOFT OFFICE",
+    icon: "/images/icons/microsoft.webp",
+  },
+  {
+    name: "FIGMA",
+    icon: "/images/icons/figma.webp",
+  },
+  {
+    name: "WORDPRESS",
+    icon: "/images/icons/wordpress.webp",
+  },
+];
 
 /* -------------------------- CODE FOR FONTS GOOGLE ------------------------- */
 

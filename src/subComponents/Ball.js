@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -37,7 +37,7 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
-    const imageUrl = icon?.url || "";
+ 
   return (
     <Canvas
       frameloop="demand"
@@ -47,7 +47,7 @@ const BallCanvas = ({ icon }) => {
     >
       <Suspense fallback={null}>
         <OrbitControls enableZoom={false} />
-        <Ball imgUrl={imageUrl} />
+        <Ball imgUrl={icon} />
       </Suspense>
 
       <Preload all />
