@@ -114,12 +114,12 @@ const Projects = () => {
                   <FourthProjects
                     type="Excel"
                     title="Point of Sale App"
-                    summary="We created a professional point of sale application with the possibility of printing the generated invoice, it has been configured in such a way that it works with thermal printing invoice. A form has been generated to register the products and the tickets generated can be accessed and downloaded in pdf format."
+                    summary="We have created a professional application that allows you to generate tickets using data saved in a database; using Excel VBA. It was created for a clothing store that sells privately, so that the businesswoman can have exclusive control of the sales she makes. A form has been generated to register the products and the tickets generated can be accessed and downloaded in pdf format."
                     img1={image1A}
                     img2={image1B}
                     img3={image1C}
-                    googleSheet="https://minimal-nextjs-portfolio-website.vercel.app/projects"
-                    link="/excelProjects/"
+                    googleSheet="https://drive.google.com/file/d/1A1Ei8IDX3zvaQOyl1OuI4d09qFQ261rB/view?usp=drive_link"
+                    link="/excelProjects/pv_vba.zip"
                   />
                 </motion.div>
               </>
